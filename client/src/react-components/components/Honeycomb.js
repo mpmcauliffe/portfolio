@@ -1,25 +1,60 @@
-import React, {Component} from 'react'
+import React from 'react'
+import '../../assets/themes/css/honeycomb.css'
+import {
+    View,
+    Layer,
+    Group,
+    Path,
+    Circle,
+    Ellipse,
+    Rectangle,
+    PointText,
+    Tool,
+  } from 'react-paper-bindings'
+  
 
-
-class Honeycomb extends Component {
-    state = {
-        colors: new Array(6)
-    }
-
-    render() {
+const Honeycomb = () => {
+    const ReactLogo = ({ rotation, x, y }) => {
         return (
-            <div style={{ background: '#000' }}>
-                <div>
-                    <img 
-                        src={require('../../assets/images/honeycomb.png')}
-                        alt='honeycomb'
-                        style={{ height: '100vh', width: '100vw'}}
-                    />
-                </div>
-            </div>
+          <Group name={'reactLogo'} rotation={rotation}>
+            <Ellipse
+              center={[x, y]}
+              size={[70, 25]}
+              strokeWidth={2.5}
+              strokeColor={'#61DAFB'}
+            />
+            <Ellipse
+              center={[x, y]}
+              rotation={120}
+              size={[70, 25]}
+              strokeWidth={2.5}
+              strokeColor={'#61DAFB'}
+            />
+            <Ellipse
+              center={[x, y]}
+              rotation={240}
+              size={[70, 25]}
+              strokeWidth={2.5}
+              strokeColor={'#61DAFB'}
+            />
+            <Circle
+              center={[x, y]}
+              fillColor={'#61DAFB'}
+              radius={7}
+            />
+          </Group>
         )
-    }  
-}
+      }
+      
+
+
+    return (
+        <div style={{ background: '#17171B', height: '100vh', width: '100vw' }}>
+            <ReactLogo />
+        </div>
+    )
+}  
+
 
 
 export { Honeycomb }
