@@ -1,1 +1,1 @@
-export * from './Honeycomb'
+//export * from './Honeycomb'
