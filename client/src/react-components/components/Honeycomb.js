@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import '../../assets/themes/css/honeycomb.css'
 //import * as THREE from 'three';
 
