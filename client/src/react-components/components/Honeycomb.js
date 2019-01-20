@@ -1,4 +1,5 @@
 import React from 'react'
+import { largeHexon } from '../../assets/javascript/largeHexon'
 import '../../assets/themes/css/honeycomb.css'
 //import * as THREE from 'three';
 
@@ -13,7 +14,7 @@ const Honeycomb = () => {
                 width: '100vw' 
             }}
         >
-            
+            <canvas onLoad={largeHexon} styles={{ height: '100vh', width: '100vw'}}></canvas>
         </div>
     )
 }  
