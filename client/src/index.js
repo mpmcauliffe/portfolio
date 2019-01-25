@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import ReactDOM from 'react-dom'
 import CanvasPrime from './react-components/CanvasPrime'
-import { CssBaseline } from '@material-ui/core'
-import './assets/themes/css/base.css'
+import GlobalStyle from './assets/styled-components/globalStyle'
 
 
 ReactDOM.render(
-    <CssBaseline>
+    <Fragment>
+        <GlobalStyle />
         <CanvasPrime />
-    </CssBaseline>,
+    </Fragment>,
     document.getElementById('root')
 )
