@@ -5,7 +5,7 @@ import { HexCanvas, } from '../../assets/styled-components/components'
 
 
 class Honeycomb extends Component {
-    componentDidMount(){
+    componentDidMount() {
 
         const width = this.mount.clientWidth
         const height = this.mount.clientHeight
@@ -24,33 +24,22 @@ class Honeycomb extends Component {
         this.mount.appendChild(this.renderer.domElement)
 
         //ADD CUBE
-        const loader = new ColladaLoader()
-
-        loader.load('/assets/models/3Dhe-1/3Dhex.dae', (collada) => {
+        let loader = new THREE.ColladaLoader()
+        loader.load('../../assets/models/3Dhex-1/3Dhex.dae', (collada) => {
             let hexon = collada.scene
             this.scene.add(hexon)
         })
     }
-    componentWillUnmount(){
+    componentWillUnmount() {
         this.stop()
         this.mount.removeChild(this.renderer.domElement)
-      }
-    start = () => {
-        if (!this.frameId) {
-          this.frameId = requestAnimationFrame(this.animate)
-        }
-      }
+    }
+   
     stop = () => {
         cancelAnimationFrame(this.frameId)
-      }
-    animate = () => {
-       this.cube.rotation.x += 0.01
-       this.cube.rotation.y += 0.01
-       this.renderScene()
-       this.frameId = window.requestAnimationFrame(this.animate)
-     }
+    }
     renderScene = () => {
-      this.renderer.render(this.scene, this.camera)
+        this.renderer.render(this.scene, this.camera)
     }
     
     render() {
