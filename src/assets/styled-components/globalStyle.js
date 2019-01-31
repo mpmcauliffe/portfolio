@@ -16,6 +16,9 @@ const GlobalStyle = createGlobalStyle`
         overflow-x: hidden;
         height: 100vh;
     }
+    h1 {
+        font-size: 5rem;
+    }
 `
 
 
