@@ -1,3 +1,0 @@
-this playground is a THREE.js with React tutorial that can be found at 
-
-https://itnext.io/how-to-use-plain-three-js-in-your-react-apps-417a79d926e0
