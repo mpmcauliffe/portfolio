@@ -32,7 +32,7 @@ export default canvas => {
         const aspectRatio = width / height
         const camera = new THREE.PerspectiveCamera(45, aspectRatio, 0.001, 4)
 
-        camera.position.set(0, -.39, .009)
+        camera.position.set(0, -.387, .009)
 
         return camera
     }
