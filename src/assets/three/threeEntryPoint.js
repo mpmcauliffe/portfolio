@@ -18,7 +18,7 @@ export default containerElement => {
     }
     function resizeCanvas() {
         canvas.style.width = '100vw'
-        canvas.style.height= '100vh'
+        canvas.style.height= '133vh'
         canvas.width = canvas.offsetWidth
         canvas.height = canvas.offsetHeight
         sceneManager.onWindowResize()

@@ -1,7 +1,7 @@
 import React, { Component, Fragment, } from 'react'
 import threeEntryPoint from '../../assets/three/threeEntryPoint'
-import { NameTape, } from '../components/NameTape'
-import { HexCanvas, } from '../../assets/styled-components/components'
+import { NameTape, Shield } from '../components'
+import { HexCanvas, Top, } from '../../assets/styled-components'
 
 
 class Honeycomb extends Component {
@@ -10,12 +10,13 @@ class Honeycomb extends Component {
     }
     render () {
         return (
-            <Fragment>
+            <Top>
                 <HexCanvas 
                     ref={element => this.threeRootElement = element} 
                 />
                 <NameTape />
-            </Fragment>
+                <Shield />
+            </Top>
             
         );
     }

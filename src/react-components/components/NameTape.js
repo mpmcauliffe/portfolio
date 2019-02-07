@@ -1,5 +1,5 @@
 import React, { Fragment, } from 'react'
-import { NamePlaque, } from '../../assets/styled-components/components'
+import { NamePlaque, } from '../../assets/styled-components'
 
 
 const NameTape = () =>

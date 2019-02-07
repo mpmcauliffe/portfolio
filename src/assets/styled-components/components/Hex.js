@@ -1,10 +1,23 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 
+const imageAnimation = keyframes`
+    0% { 
+        opacity: 0; 
+        animation-timing-function: ease-in;
+    }
+    100% {
+        opacity: 1;
+        animation-timing-function: ease-in;
+    }
+`
 const HexCanvas = styled.div`
-    height: 100vh;
+    height: 133vh;
     width: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background: #05090A;
+    animation: ${imageAnimation} 10s 2s; 
 `
 const NamePlaque = styled.div`
     height: 19rem;
@@ -19,9 +32,13 @@ const NamePlaque = styled.div`
     opacity: .7;
     text-align: center;
 `
+const Top = styled.div`
+    background: #05090A; 
+`
 
 
 export {
     HexCanvas,
     NamePlaque,
+    Top,
 }
