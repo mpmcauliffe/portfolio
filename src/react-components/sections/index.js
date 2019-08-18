@@ -1,2 +1,2 @@
-export * from './Honeycomb'
-export * from './Navbar'
+export * from './honeycomb/Honeycomb'
+export * from './navbar/Navbar'

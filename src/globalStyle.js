@@ -19,6 +19,15 @@ const GlobalStyle = createGlobalStyle`
     h1 {
         font-size: 5rem;
     }
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2.6rem;
+    }
+    li {
+        list-style: none;
+    }
 `
 
 
