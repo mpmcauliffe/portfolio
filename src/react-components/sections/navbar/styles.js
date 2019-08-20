@@ -3,12 +3,12 @@ import styled from 'styled-components'
 
 export const Nav = styled.div`
     display : flex;
-    position: ${props => (props.traveling ? 'sticky' : 'absolute')};
+    position: ${props => (props.traveling ? 'sticky' : 'static')};
     height: 10vh;
     min-height: 7vh;
     width: 100vw;
     top: ${props => (props.traveling ? 0 : '150vh')};
-    z-index: 10;
+    z-index: 50;
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
@@ -22,7 +22,7 @@ export const Nav = styled.div`
 export const Home = styled.div`
     height: 4rem;
     width: 3.5rem;
-    background: #9E2A2B;
+    background: #78C0E0;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     transition: 700ms;
 
@@ -52,7 +52,7 @@ export const Menu = styled.li`
     list-style: none;
     float: right;
     font-size: 2rem;
-    color: #9E2A2B;
+    color: #78C0E0;
     transition: 700ms;
 
     &:hover {
@@ -63,3 +63,5 @@ export const Menu = styled.li`
 `
 //clip-path: polygon(75% 0, 75% 61%, 100% 61%, 50% 100%, 0 61%, 25% 61%, 25% 0);
 //clip-path: polygon(50% 29%, 100% 0, 100% 100%, 50% 69%, 0 100%, 0 0);
+//${props => (props.traveling ? 'sticky' : 'absolute')};
+//#9E2A2B;

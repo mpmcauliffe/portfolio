@@ -36,7 +36,11 @@ const Navbar = () => {
             <Home onClick={() => scrolling(0)} />
 
             <UlMenu>
-                <Menu>About</Menu>
+                <Menu 
+                    onClick={() => scrolling(window.scrollY - window.scrollY + (window.innerHeight + (window.innerHeight / 2)))}
+
+                >   About</Menu>
+                
                 <Menu>Portfolio</Menu>
                 <Menu>Blog</Menu>
                 <Menu>Contact</Menu>

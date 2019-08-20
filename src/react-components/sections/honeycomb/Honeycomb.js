@@ -19,19 +19,18 @@ class Honeycomb extends Component {
     render () {
         return (
             <Top>
-                {/* <HexCanvas 
-                    ref={element => this.threeRootElement = element} />*/}
+                {/*<HexCanvas 
+                ref={element => this.threeRootElement = element} />*/}
 
                 <div 
                     style={{ height: '150vh',
                         width: '100vw',
-                        //paddingTop: '60vh',
-                        background: '#05090A', }} />
+                        background: '#05090A', }} /> 
 
-                <NamePlaque onClick={() => scrolling(window.innerHeight + (window.innerHeight / 2))}>
+                <NamePlaque>
                     <h1>Michael McAuliffe</h1>
                     <h2>Fullstack Developer</h2>
-                    <NavButton>
+                    <NavButton onClick={() => scrolling(window.innerHeight + (window.innerHeight / 2))}>
                         <h3>Check This Out &emsp; </h3>
                         <DownArrow />
                     </NavButton>

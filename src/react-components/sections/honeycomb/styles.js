@@ -22,7 +22,7 @@ const tapeAnimation = keyframes`
     }
 `
 export const HexCanvas = styled.div`
-    height: 133vh;
+    height: 150vh;
     width: 100vw;
     background-repeat: no-repeat;
     background-attachment: fixed;
