@@ -43,7 +43,7 @@ export const NamePlaque = styled.div`
     opacity: .7;
     animation: ${tapeAnimation} 3s;
 
-    @media (max-width: 769px) {
+    @media (max-width: 481px) {
         height: 33rem;
         width: 100vw;
         margin: 0;

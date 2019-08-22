@@ -14,9 +14,9 @@ export const Nav = styled.div`
     padding: 0 2rem;
     background: #1C3339;
 
-    @media (max-width: 769px) {
+    /* @media (max-width: 769px) {
         justify-content: flex-start;
-    }
+    } */
 `
 
 export const Home = styled.div`
@@ -42,6 +42,10 @@ export const UlMenu = styled.ul`
     padding-right: 2rem;
 
     @media (max-width: 769px) {
+        width: 67vw;
+    }
+
+    @media (max-width: 481px) {
         width: 90vw;
         padding: 1rem;
     }

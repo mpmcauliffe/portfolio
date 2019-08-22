@@ -1,33 +1,98 @@
 import React, { Fragment, } from 'react'
-import { SectionTitle, SkillContainer, SkillContent, SkillPolygon, SkillTitle, } from './styles'
-import { skillsText, } from './text'
+import { Partition, SectionTitle, SmallContainer, } from '../../appStyles'
+import { BioPicture,
+    ListOutContainer,
+    SkillContent, 
+    SkillPolygon, 
+    SkillTitle, } from './styles'
+import { bioText, listOut, skillsText, } from './text'
 
 
 const Bio = () => {
     return (
         <Fragment>
-            
-            <div
-                style={{ display: 'flex', flexBasis: '27rem', width: '90%', justifyContent: 'space-around', margin: '40vh auto 30vh auto', flexWrap: 'wrap', }} >
+            <SectionTitle>About</SectionTitle>    
 
+            <Partition>
                 {skillsText.map(skill => (
-                    <SkillContainer key={skill.title}>
+                    <SmallContainer key={skill.title}>
                         <SkillTitle>{skill.title}</SkillTitle>
                         <SkillPolygon />
                         <SkillContent>{skill.content}</SkillContent>
-                    </SkillContainer>
+                    </SmallContainer>
                 ))}
-            </div>
+            </Partition>
             
 
-            <div 
-                style={{ height: '50vh', width: '40vw', order: 1, flexGrow: 1, background: '#78C0E0', }} />
+            <Partition style={{ justifyContent: 'space-between', }}>
+                <SmallContainer style={{ width: '40rem', alignSelf: 'center', margin: '0 auto' }}>
+                    <BioPicture>
+                        <img
+                            alt='bear'
+                            style={{ height: '34rem', width: '37rem', }} 
+                            src={require('../../../assets/images/30437233898_19007f547b_b.jpg')} />
+                    </BioPicture>
+                    <SkillContent>{bioText}</SkillContent>
+                </SmallContainer>
+                
+                
 
-            <div
-                style={{ height: '90vh', width: '25vw', order: 2, background: '#E09F3E', }} />
+                <ListOutContainer>
+                    {Object.keys(listOut).map(key => (
+                        <SmallContainer 
+                            key={key}
+                            style={{ flexDirection: 'column', alignItems: 'flex-start', }}>
+
+                            <SkillTitle
+                                style={{ textAlign: 'left', marginBottom: '1rem' }}
+
+                            >   {key}
+                            </SkillTitle>
+                            <div>
+                                {listOut[key].map(value => (
+                                    <SkillContent
+                                        key={value}
+                                        style={{ textAlign: 'left', margin: '1rem 0', }}
+
+                                    >   {value}
+                                    </SkillContent>
+                                ))}
+                            </div>
+                        </SmallContainer> 
+                    ))}
+                </ListOutContainer>
+            </Partition>
+            
         </Fragment>
     )
 }
 
 
 export { Bio }
+
+
+/**
+ <SkillTitle>Languages</SkillTitle>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                    <SkillTitle>Tools</SkillTitle>
+                    <ul>
+                        <li>Node JS</li>
+                        <li>React</li>
+                        <li>Mongo DB</li>
+                        <li>Sass</li>
+                        <li>OAuth</li>
+                        <li>Auth0</li>
+                    </ul>
+                    <SkillTitle>Design</SkillTitle>
+                    <ul>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>InDesign</li>
+                        <li>UI design</li>
+                        <li>Logo design</li>
+                    </ul>
+ */

@@ -1,3 +1,6 @@
 export * from './bio/Bio'
+export * from './blog/Blog'
+export * from './contact/Contact'
 export * from './honeycomb/Honeycomb'
 export * from './navbar/Navbar'
+export * from './portfolio/Portfolio'

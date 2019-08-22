@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
         font-size: 2.6rem;
     }
     h4 {
-        font-size: 2.1rem;
+        font-size: 1.9rem;
         font-weight: 400;
     }
     li {

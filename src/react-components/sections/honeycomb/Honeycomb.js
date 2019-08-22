@@ -1,8 +1,8 @@
 import React, { Component, } from 'react'
 import threeEntryPoint from '../../../assets/three/threeEntryPoint'
+import { GradientShield, } from '../../appStyles'
 import { DownArrow,
     Fog, 
-    GradientShield, 
     HexCanvas, 
     NamePlaque,
     NavButton, 
@@ -28,8 +28,8 @@ class Honeycomb extends Component {
                         background: '#05090A', }} /> 
 
                 <NamePlaque>
-                    <h1>Michael McAuliffe</h1>
-                    <h2>Fullstack Developer</h2>
+                    <h1 style={{ color: '#20343d', }}>Michael McAuliffe</h1>
+                    <h2 style={{ color: '#20343d', }}>Fullstack Developer</h2>
                     <NavButton onClick={() => scrolling(window.innerHeight + (window.innerHeight / 2))}>
                         <h3>Check This Out &emsp; </h3>
                         <DownArrow />

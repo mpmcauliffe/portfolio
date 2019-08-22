@@ -1,34 +1,43 @@
 import React, { Fragment } from 'react'
-import { Bio, Honeycomb, Navbar, } from './sections'
+import { BodyContainer, GradientShield, } from './appStyles'
+import { Bio, Blog, Contact, Honeycomb, Navbar, Portfolio, } from './sections'
 
 
 const CanvasPrime = () => 
     <Fragment>
         <Honeycomb />
 
-        <div 
-            style={{ height: '500vh',
-                width: '100vw',
-                //paddingTop: '60vh',
-                background: '#05090A', }} >
+        <BodyContainer>
 
             <Navbar />
             
             <Bio />
+            <Portfolio />
+            <Blog />
             <div 
-                style={{ display: 'flex', 
-                    height: '200vh', 
-                    width: '100vw', 
-                    justifyContent: 'space-between',
-                    alignItems: 'center', 
-                    padding: '60vh 10rem', }} >
+                style={{ height: '30vh', 
+                    width: '100%', 
+                    background: '#05090A', }} />
 
-                
-            </div>
-        </div>
+            {/*<GradientShield top={''} bottom={'90vh'} style={{ transform: 'rotate(180deg)', }} /> */}
+        </BodyContainer>
 
-        
+        <Contact />
     </Fragment>
 
 
 export default CanvasPrime 
+
+
+/**
+ <div 
+    style={{ display: 'flex', 
+        height: '200vh', 
+        width: '100vw', 
+        justifyContent: 'space-between',
+        alignItems: 'center', 
+        padding: '60vh 10rem', }} >
+
+    
+</div>
+ */

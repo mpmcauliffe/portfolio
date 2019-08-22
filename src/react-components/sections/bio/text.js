@@ -15,3 +15,14 @@ export const skillsText = [
         content: 'Donec sit amet nisi molestie, maximus purus vitae, condimentum velit.',
     }
 ]
+
+export const bioText = 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum' + 
+                       'dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,' + 
+                       'sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim' + 
+                       'veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+
+export const listOut = {
+    'Languages': ['HTML', 'CSS', 'Javascript'],
+    'Tools': ['Node JS', 'React', 'Mongo DB', 'Sass', 'Auth0', 'Github'],
+    'Graphics': ['Photoshop', 'Illustrator', 'InDesign', 'UI Design', 'Logo Design'],
+}
