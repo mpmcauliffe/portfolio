@@ -13,6 +13,10 @@ export const BioPicture = styled.div`
     /* box-shadow: inset 3rem 4rem 2rem #000; */
     clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
 
+    @media (max-width: 1224px) {
+        margin-bottom: 5rem;
+    }
+
     @media (max-width: 769px) {
         flex-basis: 100%;
     }
@@ -25,10 +29,15 @@ export const BioPicture = styled.div`
 export const ListOutContainer = styled.div`
     display: flex;
     align-self: center;
+    margin: 0 auto;
     padding: 10rem 0 10rem 10rem;
     background: #1C3339;
     border: .1rem solid #05090A;
     border-radius: 2rem;
+
+    @media (max-width: 1224px) {
+        margin-top: 5rem;
+    }
 
     @media (max-width: 769px) {
         padding: 4rem 0 4rem 6rem;

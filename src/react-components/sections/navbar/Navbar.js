@@ -1,4 +1,4 @@
-import React, { useState, useEffect, } from 'react'
+import React, { useState, useEffect, useRef, } from 'react'
 import { Home, Menu, Nav, UlMenu, } from './styles'
 import scrolling from '../../../assets/helpers/scrolling'
 
@@ -38,6 +38,7 @@ const Navbar = () => {
             <UlMenu>
                 <Menu 
                     onClick={() => scrolling(window.scrollY - window.scrollY + (window.innerHeight + (window.innerHeight / 2)))}
+                    //ref={about}
 
                 >   About</Menu>
                 

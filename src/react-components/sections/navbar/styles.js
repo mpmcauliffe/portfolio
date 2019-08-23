@@ -41,11 +41,11 @@ export const UlMenu = styled.ul`
     justify-content: space-between;
     padding-right: 2rem;
 
-    @media (max-width: 769px) {
+    @media (max-width: 1024px) {
         width: 67vw;
     }
 
-    @media (max-width: 481px) {
+    @media (max-width: 480px) {
         width: 90vw;
         padding: 1rem;
     }

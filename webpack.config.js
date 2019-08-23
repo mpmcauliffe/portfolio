@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
     entry: './src/index.js',
     output: {
-        path: path.join(__dirname, '/docs'),
+        path: path.join(__dirname, '/build'),
         filename: 'bundle.js',
     },
     module: {
@@ -21,7 +21,7 @@ module.exports = {
                 use: [
                     'style-loader',
                     'css-loader',
-                    'sass-loader'
+                    //'sass-loader'
                 ]
             }, {
                 test: /\.dae$/,
