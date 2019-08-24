@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, } from 'react'
+import { Link, animateScroll as scroll } from "react-scroll";
 import { Home, Menu, Nav, UlMenu, } from './styles'
-import scrolling from '../../../assets/helpers/scrolling'
 
 
 const Navbar = () => {
@@ -33,18 +33,58 @@ const Navbar = () => {
 
     return (
         <Nav traveling={isTraveling}>
-            <Home onClick={() => scrolling(0)} />
+            <Link
+                activeClass='active'
+                to='honeycomb'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration= {500}
+
+            ><Home /></Link>
+            
 
             <UlMenu>
-                <Menu 
-                    onClick={() => scrolling(window.scrollY - window.scrollY + (window.innerHeight + (window.innerHeight / 2)))}
-                    //ref={about}
 
-                >   About</Menu>
+                <Link
+                    activeClass='active'
+                    to='about'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration= {500}
+
+                ><Menu>About</Menu></Link>
                 
-                <Menu>Portfolio</Menu>
-                <Menu>Blog</Menu>
-                <Menu>Contact</Menu>
+                <Link
+                    activeClass='active'
+                    to='portfolio'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration= {500}
+
+                ><Menu>Portfolio</Menu></Link>
+                
+                <Link
+                    activeClass='active'
+                    to='blog'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration= {500}
+
+                ><Menu>Blog</Menu></Link>
+                
+                <Link
+                    activeClass='active'
+                    to='contact'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration= {500}
+
+                ><Menu>Contact</Menu></Link>
             </UlMenu>
         </Nav>
     )    
@@ -55,6 +95,8 @@ export { Navbar }
 
 
 /**
+ * 
+ * onClick={() => scrolling(window.scrollY - window.scrollY + (window.innerHeight + (window.innerHeight / 2)))}
  <img
         img='hex' 
         src={require('../../../assets/images/hex.png')} 

@@ -5,7 +5,7 @@ import { Partition, SectionTitle, SmallContainer, } from '../../appStyles'
 const Blog = () => {
     return (
         <Fragment>
-            <SectionTitle>Blogs</SectionTitle>
+            <SectionTitle id='blog'>Blogs</SectionTitle>
 
             <Partition>
                 <SmallContainer style={{ height: '30rem', background: '#E09F3E', }} />

@@ -31,9 +31,10 @@ export const ListOutContainer = styled.div`
     align-self: center;
     margin: 0 auto;
     padding: 10rem 0 10rem 10rem;
-    background: #9E2A2B;
+    background: #C7D2D5;
     border: .1rem solid #05090A;
-    border-radius: 2rem;
+    opacity: .7;
+    border-radius: 3rem;
 
     @media (max-width: 1280px) {
         margin-top: 5rem;

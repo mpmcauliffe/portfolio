@@ -11,7 +11,7 @@ const Portfolio = () => {
 
     return (
         <Fragment>
-            <SectionTitle>Portfolio</SectionTitle>
+            <SectionTitle id='portfolio'>Portfolio</SectionTitle>
         {/* coverImg info codeLink instructionsLink visitLink backgroundColor textColor hov */}
             <Partition>
                 {projects.map(project => (

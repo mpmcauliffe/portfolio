@@ -1,4 +1,7 @@
 
+/*  !!!
+ *  This tool has been deprecated in favor of react-scroll
+ */
 
 const scrolling = (y) => {
     setTimeout(() => {

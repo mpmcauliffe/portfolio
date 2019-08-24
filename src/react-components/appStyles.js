@@ -38,7 +38,8 @@ export const SectionTitle = styled.h1`
     text-align: center;
     font-weight: 400;
     color: #20343d;
-    margin-top: 10rem;
+    margin-top: 0;
+    padding-top: 15rem;
     z-index: 10;
 `
 
