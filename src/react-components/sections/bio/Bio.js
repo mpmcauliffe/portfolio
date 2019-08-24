@@ -44,7 +44,7 @@ const Bio = () => {
                             style={{ flexDirection: 'column', alignItems: 'flex-start', }}>
 
                             <SkillTitle
-                                style={{ textAlign: 'left', marginBottom: '1rem' }}
+                                style={{ textAlign: 'left', color: '#1C3339', marginBottom: '1rem' }}
 
                             >   {key}
                             </SkillTitle>
