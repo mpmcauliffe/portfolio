@@ -59,7 +59,7 @@ export const Menu = styled.li`
     color: #78C0E0;
     transition: 700ms;
 
-    &:hover {
+    &:hover, > .active {
         cursor: pointer;
         color: #E09F3E;
         /* border-bottom: .1rem solid #E09F3E; */

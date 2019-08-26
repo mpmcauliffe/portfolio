@@ -27,6 +27,7 @@ export const SmallContainer = styled.div`
     width: 24rem;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 3rem;
 `
 
 
@@ -39,7 +40,7 @@ export const SectionTitle = styled.h1`
     font-weight: 400;
     color: #20343d;
     margin-top: 0;
-    padding-top: 15rem;
+    padding-top: 10rem;
     z-index: 10;
 `
 

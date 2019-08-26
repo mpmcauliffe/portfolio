@@ -45,7 +45,6 @@ const Navbar = () => {
             
 
             <UlMenu>
-
                 <Link
                     activeClass='active'
                     to='about'
@@ -92,13 +91,3 @@ const Navbar = () => {
 
 
 export { Navbar }
-
-
-/**
- * 
- * onClick={() => scrolling(window.scrollY - window.scrollY + (window.innerHeight + (window.innerHeight / 2)))}
- <img
-        img='hex' 
-        src={require('../../../assets/images/hex.png')} 
-        style={{ height: '4rem', }} />
- */
