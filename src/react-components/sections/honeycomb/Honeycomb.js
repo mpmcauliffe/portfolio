@@ -11,22 +11,24 @@ import { DownArrow,
 
 
 class Honeycomb extends Component {
-    // componentDidMount() {
-    //     threeEntryPoint(this.threeRootElement);
-    // }
+    componentDidMount() {
+        threeEntryPoint(this.threeRootElement);
+    }
 
 
     render () {
         return (
             <Top>
-                {/*<HexCanvas 
-                ref={element => this.threeRootElement = element} />*/}
+                <HexCanvas 
+                    id='honeycomb'
+                    ref={element => this.threeRootElement = element} />
 
-                <div 
+                {/*<div 
                     id='honeycomb'
                     style={{ height: '150vh',
                         width: '100vw',
-                        background: '#05090A', }} /> 
+                        background: '#05090A', }} />  */}
+                
 
                 <NamePlaque>
                     <h1 style={{ color: '#20343d', }}>Michael McAuliffe</h1>
