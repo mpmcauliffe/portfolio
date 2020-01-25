@@ -1,5 +1,19 @@
 export const projects = [
-    {   // PIP-PRODUCERS
+    {   // RACEMATE
+        name: 'Racemate',
+        coverImg: './images/racemate-cardFront.png',
+        alt: 'RACEMATE',
+        info: 'RACEMATE is a workout and routine tracking app that allows users to' +
+            ' document their progress. It is a MERN app implemented with GraphQL and' +
+            ' Apollo. State is elevated and managed through Apollo client cache.' +
+            ' RACEMATE is primarily designed for mobile usage.',
+        codeLink: '',
+        instructionsLink: '',
+        visitLink: 'https://racemate3d.herokuapp.com/',
+        backgroundColor: '#f7f7f7',
+        textColor: '#1c395c',
+        hov: '',
+    }, {   // PIP-PRODUCERS
         name: 'Pip Producers',
         coverImg: './images/pip-cardFront.png',
         alt: 'pip-producers',
@@ -7,7 +21,7 @@ export const projects = [
             ' stack architecture. Read, write, update, and delete rights' +
             ' are determined by a roles based authorization system with' +
             ' JSON web-token.',
-        codeLink: '',
+        codeLink: 'https://github.com/mpmcauliffe/pip-producer',
         instructionsLink: 'https://mpmcauliffe.github.io/blog-instructions/',
         visitLink: 'https://fierce-springs-23091.herokuapp.com/article/5d4faa613de5e36ca4e88000',
         backgroundColor: '#DAA520',

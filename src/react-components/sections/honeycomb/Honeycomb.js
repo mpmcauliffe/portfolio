@@ -1,6 +1,6 @@
 import React, { Component, } from 'react'
 import threeEntryPoint from '../../../assets/three/threeEntryPoint'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link, animateScroll as scroll } from 'react-scroll'
 import { GradientShield, } from '../../appStyles'
 import { DownArrow,
     Fog, 
