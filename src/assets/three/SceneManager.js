@@ -48,6 +48,7 @@ export default canvas => {
     
 
     let loader = new ColladaLoader()
+    /* DEVELOPMENT: uncomment 52 - 61 */
     loader.load('src/assets/models/3Dhex-3/3Dhex.dae', (collada) => {
         let hexon = collada.scene
 
@@ -58,13 +59,20 @@ export default canvas => {
         //hexon.children[2].children[0].material.materials[2] = new THREE.ExtrudeGeometry({ depth: 1 })
         scene.add(hexon)
     })
-  
-    
-    // let blue1 = new THREE.PointLight(0x78C0E0, 18, 50)
-    // let yellow1 = new THREE.PointLight(0xE09F3E, 18, 50)
-    // let red1 = new THREE.PointLight(0x9E2A2B, 18, 50)
-    // let green1 = new THREE.PointLight(0x53917E, 18, 50)
 
+    /* PRODUCTION: uncomment 64 - 73 */
+    //     loader.load('./3Dhex.dae', (collada) => {
+    //     let hexon = collada.scene
+
+        
+    //     hexon.children[2].children[0].material.materials[0] = new THREE.MeshLambertMaterial({ color: new THREE.Color('#010101') })
+    //     //hexon.children[2].children[0].material.materials[0] = new THREE.MeshPhysicalMaterial({ color: new THREE.Color('#000000') })
+    //     hexon.children[2].children[0].material.materials[1] = new THREE.MeshPhongMaterial({ color: new THREE.Color(0x0) })
+    //     //hexon.children[2].children[0].material.materials[2] = new THREE.ExtrudeGeometry({ depth: 1 })
+    //     scene.add(hexon)
+    // })
+
+  
     let blue1 = new THREE.PointLight(0x0000FF, 18, 50)
     let yellow1 = new THREE.PointLight(0xFAFF00, 18, 50)
     let red1 = new THREE.PointLight(0xFF0000, 18, 50)
@@ -121,7 +129,10 @@ export default canvas => {
     }
 }
 
-
+    // let blue1 = new THREE.PointLight(0x78C0E0, 18, 50)
+    // let yellow1 = new THREE.PointLight(0xE09F3E, 18, 50)
+    // let red1 = new THREE.PointLight(0x9E2A2B, 18, 50)
+    // let green1 = new THREE.PointLight(0x53917E, 18, 50)
 
     // let testLight = new THREE.PointLight(0xff0000, 25, 50)
     // testLight.position.set(0,0,35) // (x -21, 21) (y 0, 30) (z 0, 35)

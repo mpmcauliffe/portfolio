@@ -115,3 +115,13 @@ export const GradientShield = styled.div`
     /* Permalink - use to edit and share this gradient: 
     https://colorzilla.com/gradient-editor/#000000+0,000000+51,ffffff+100&0+1,0+1,0.65+51 */
 `
+
+export const Test = styled.div`
+    height: 100px;
+    width: 100px;
+    background: #faff;
+
+    &:active {
+        background: #6f6ffa
+    }
+`

@@ -13,7 +13,10 @@ const CanvasPrime = () =>
             
             <Bio />
             <Portfolio />
-            <Blog />
+
+            {/**<Blog /> */}
+
+            
             <div 
                 style={{ height: '30vh', 
                     width: '100%', 

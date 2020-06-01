@@ -7,7 +7,8 @@ import { DownArrow,
     HexCanvas, 
     NamePlaque,
     NavButton, 
-    Top,  } from './styles'
+    Top,
+    Test,  } from './styles'
 
 
 class Honeycomb extends Component {
@@ -28,8 +29,7 @@ class Honeycomb extends Component {
                     style={{ height: '150vh',
                         width: '100vw',
                         background: '#05090A', }} />  */}
-                
-
+                {/**/} 
                 <NamePlaque>
                     <h1 style={{ color: '#20343d', }}>Michael McAuliffe</h1>
                     <h2 style={{ color: '#20343d', }}>Fullstack Developer</h2>
@@ -47,8 +47,11 @@ class Honeycomb extends Component {
                             <DownArrow />
                         </NavButton>
                     </Link>
+
+                    {/*<Test />*/} 
                     
-                </NamePlaque>
+                </NamePlaque> 
+                
 
                 <GradientShield />
 

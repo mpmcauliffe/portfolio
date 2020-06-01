@@ -2,8 +2,9 @@ import React, { Fragment } from 'react'
 import { BrowserRouter as Router, Link } from 'react-router-dom'
 import { Partition, SectionTitle, } from '../../appStyles'
 import { CardBacking, IconSet, Info, LinkLabel, NavLinks, } from './styles'
+import { Card } from './stylesCard'
 import { projects, } from './text'
-import './styles.css'
+//import './styles.css'
 
 
 const Portfolio = () => {
@@ -15,7 +16,7 @@ const Portfolio = () => {
         {/* coverImg info codeLink instructionsLink visitLink backgroundColor textColor hov */}
             <Partition>
                 {projects.map(project => (
-                    <div className='card' key={project.name}>
+                    <Card className='card' key={project.name}>
                         <div className='card-inner'>
                             <div className='card-front'>
                                 <img src={require(`${project.coverImg}`)} alt={project.alt} />
@@ -58,7 +59,7 @@ const Portfolio = () => {
                                 </CardBacking>
                             </div>
                         </div>
-                    </div>
+                    </Card>
                 ))}
 
                 <div className='card'>
