@@ -37,7 +37,7 @@
     transform: rotateY(180deg);
 }
 
-@media all and(max-width: 768px) {
+/* @media all and(max-width: 768px) {
     .card:active .card-inner {
         transform: rotateY(180deg);
     }
@@ -47,4 +47,4 @@
     .card:hover .card-inner {
         transform: rotateY(180deg);
     }
-}
+} */

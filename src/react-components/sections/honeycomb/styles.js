@@ -38,7 +38,7 @@ export const NamePlaque = styled.div`
     margin-top: -25rem;
     margin-left: -31.5rem;
     background: #C7D2D5;
-    border-radius: 3rem;
+    /* border-radius: 3rem; */
     text-align: center;
     opacity: .7;
     animation: ${tapeAnimation} 3s;

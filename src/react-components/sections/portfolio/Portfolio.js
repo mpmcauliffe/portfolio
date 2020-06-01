@@ -16,7 +16,7 @@ const Portfolio = () => {
         {/* coverImg info codeLink instructionsLink visitLink backgroundColor textColor hov */}
             <Partition>
                 {projects.map(project => (
-                    <Card className='card' key={project.name}>
+                    <Card key={project.name}>
                         <div className='card-inner'>
                             <div className='card-front'>
                                 <img src={require(`${project.coverImg}`)} alt={project.alt} />
@@ -61,8 +61,7 @@ const Portfolio = () => {
                         </div>
                     </Card>
                 ))}
-
-                <div className='card'>
+                {/**/}<div className='card'>
                     <div className='card-inner'>
                         <div className='card-front'>
 
@@ -80,7 +79,8 @@ const Portfolio = () => {
                         <div className='card-back'>
                         </div>
                     </div>
-                </div>
+                </div> 
+                
             </Partition>
         </Fragment>
     )
