@@ -61,7 +61,7 @@ const Portfolio = () => {
                         </div>
                     </Card>
                 ))}
-                {/*<div className='card'>
+                {/**/}<div className='card'>
                     <div className='card-inner'>
                         <div className='card-front'>
 
@@ -79,7 +79,7 @@ const Portfolio = () => {
                         <div className='card-back'>
                         </div>
                     </div>
-                </div> */}
+                </div> 
                 
             </Partition>
         </Fragment>
