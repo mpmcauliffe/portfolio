@@ -23,9 +23,9 @@ const CanvasPrime = () =>
                     background: '#05090A', }} />
 
             {/*<GradientShield top={''} bottom={'90vh'} style={{ transform: 'rotate(180deg)', }} /> */}
-        </BodyContainer>
 
-        <Contact />
+            <Contact />
+        </BodyContainer>
     </Fragment>
 
 

@@ -20,15 +20,16 @@ class Honeycomb extends Component {
     render () {
         return (
             <Top>
-                <HexCanvas 
+                {/**/}
+                
+<HexCanvas 
                     id='honeycomb'
                     ref={element => this.threeRootElement = element} />
-
                 {/*<div 
                     id='honeycomb'
                     style={{ height: '150vh',
                         width: '100vw',
-                        background: '#05090A', }} />  */}
+                        background: '#05090A', }} />*/}
                 {/**/} 
                 <NamePlaque>
                     <h1 style={{ color: '#20343d', }}>Michael McAuliffe</h1>

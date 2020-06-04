@@ -7,7 +7,7 @@ export const Nav = styled.div`
     height: 10vh;
     min-height: 7vh;
     width: 100vw;
-    top: ${props => (props.traveling ? 0 : '150vh')};
+    top: ${props => (props.traveling ? '-2px' : '150vh')};
     z-index: 50;
     align-items: center;
     justify-content: space-between;
