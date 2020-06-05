@@ -10,20 +10,38 @@ export const ContactForm = styled.form`
     /* margin-bottom: 10rem; */
     overflow-x: hidden;
 
-    > input {
+    >input, >textarea {
         height: 4rem;
         width: 37vw;
         margin: 2rem 0;
         padding: 1rem;
         font-size: 2.5rem;
     }
-    > textarea {
+    >textarea {
         height: 16rem;
-        width: 37vw;
-        font-size: 2.5rem;
-        margin: 2rem 0;
-        padding: 1rem;
+        font-family: sans-serif;
     }
+
+    @media (max-width: 768px) {
+        >input, >textarea {
+            width: 77vw;
+        }
+    }
+
+    @media (max-width: 480px) {
+        >input, >textarea {
+            width: 95vw;
+        }
+    }
+`
+
+export const SubmitButton = styled.button`
+    height: 6rem;
+    width: 33rem;
+    margin: 6rem 0;
+    background: transparent;
+    border: .3rem solid #3456df;
+    cursor: pointer;
 `
 
 export const Footer = styled.div`

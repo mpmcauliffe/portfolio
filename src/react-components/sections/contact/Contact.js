@@ -1,6 +1,7 @@
 import React, { Fragment, useState, } from 'react'
+import * as emailjs from 'emailjs-com'
 import { GradientShield, Partition, SectionTitle, SmallContainer, } from '../../appStyles'
-import { ContactForm, Footer, } from './styles'
+import { ContactForm, Footer, SubmitButton, } from './styles'
 
 
 const Contact = () => {
@@ -14,7 +15,25 @@ const Contact = () => {
     const handleChange = e => setFormState({ ...formState, [e.target.name]: e.target.value })
 
     const handleFormSubmit = e => {
-        console.log(submit)
+        e.preventDefault()
+
+        const { name, email, message, } = formState
+        const fullMessage = `${message} Email: ${email}`
+
+        const templateParams = {
+            from_name: name,
+            to_name: 'Michael',
+            subject: 'A message form your portfolio',
+            message_html: fullMessage,
+            sender_email: email
+        }
+
+        emailjs.send(
+            'gmail',
+            'template_oxSdnufr',
+             templateParams,
+            'user_zQLOWi9I5SmNVHxZFAANB'
+        )
     }
 
 
@@ -47,7 +66,7 @@ const Contact = () => {
                         placeholder='Message'
                         required />
 
-                    <button type='submit'>Submit</button>
+                    <SubmitButton type='submit'>Submit</SubmitButton>
                 </ContactForm>
 
             
