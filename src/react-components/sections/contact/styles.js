@@ -21,6 +21,11 @@ export const ContactForm = styled.form`
         height: 16rem;
         font-family: sans-serif;
     }
+    >p {
+        font-size: 1.7rem
+        text-align: center;
+        color: #ccccff;
+    }
 
     @media (max-width: 768px) {
         >input, >textarea {
@@ -46,7 +51,7 @@ export const SubmitButton = styled.button`
 
 export const Footer = styled.div`
     position: absolute;
-    height: 90vh;
+    height: 20vh;
     width: 100%;
     
     background: #05090A;

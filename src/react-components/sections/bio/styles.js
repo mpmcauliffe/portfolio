@@ -6,12 +6,13 @@ import { colorTheme } from '../../appStyles'
  *  BIO 
  */
 export const BioPicture = styled.div`
-    height: 33rem;
+    height: 50rem;
     width: 33rem;
     background: transparent;
     /* border: .2rem solid #e8f8ff; */
     /* box-shadow: inset 3rem 4rem 2rem #000; */
-    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    /* clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%); */
+    /* clip-path: polygon(50% 0%, 100% 14%, 100% 86%, 50% 100%, 0 86%, 0 14%); */
 
     @media (max-width: 1224px) {
         margin-bottom: 5rem;

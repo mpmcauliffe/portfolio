@@ -25,18 +25,18 @@ const Bio = () => {
             
 
             <Partition style={{ justifyContent: 'space-between', }}>
-                <SmallContainer style={{ width: '40rem', alignSelf: 'center', margin: '0 auto' }}>
+                {/*<SmallContainer style={{ width: '40rem', alignSelf: 'center', margin: '0 auto' }}> */}
+                
+                <div style={{ display: 'flex', }}>
                     <BioPicture>
                         <img
                             alt='bear'
-                            style={{ height: '34rem', width: '37rem', }} 
-                            src={require('../../../assets/images/30437233898_19007f547b_b.jpg')} />
+                            style={{ height: '35rem', width: '29rem', }} 
+                            src={require('../../../assets/images/7.png')} />
                     </BioPicture>
                     <SkillContent>{bioText}</SkillContent>
-                </SmallContainer>
+                </div>
                 
-                
-
                 <ListOutContainer>
                     {Object.keys(listOut).map(key => (
                         <SmallContainer 

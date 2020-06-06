@@ -23,6 +23,6 @@ export const bioText = 'Duis aute irure dolor in reprehenderit in voluptate veli
 
 export const listOut = {
     'Languages': ['HTML', 'CSS', 'Javascript'],
-    'Tools': ['Node JS', 'React', 'Mongo DB', 'Sass', 'Auth0', 'Github'],
-    'Graphics': ['Photoshop', 'Illustrator', 'InDesign', 'UI Design', 'Logo Design'],
+    'Tools': ['Node JS', 'React', 'Mongo DB', 'Sass', 'Auth0', 'Github', 'HTML5 Canvas'],
+    'Graphics': ['Photoshop', 'Illustrator', 'InDesign', 'Adobe Animate', 'UI Design', 'Logo Design'],
 }

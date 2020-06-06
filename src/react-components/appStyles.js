@@ -15,7 +15,7 @@ export const Partition = styled.div`
     flex-basis: 27rem; 
     width: 90%; 
     justify-content: space-around; 
-    margin: 10vh auto 40vh auto; 
+    margin: 10vh auto 25vh auto; 
     flex-wrap: wrap;
 
     @media (max-width: 769px) {

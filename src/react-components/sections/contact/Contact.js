@@ -9,10 +9,11 @@ const Contact = () => {
         name: '',
         email: '',
         message: '',
-        alert: '',
+        alert: 'Information will only be used for the purposes of completing your request.',
     })
 
-    const handleChange = e => setFormState({ ...formState, [e.target.name]: e.target.value })
+
+    const handleChange = (e) => setFormState({ ...formState, [e.target.name]: e.target.value })
 
     const handleFormSubmit = e => {
         e.preventDefault()
@@ -31,9 +32,13 @@ const Contact = () => {
         emailjs.send(
             'gmail',
             'template_oxSdnufr',
-             templateParams,
+            templateParams,
             'user_zQLOWi9I5SmNVHxZFAANB'
-        )
+        ).then(res => {
+            setFormState({ ...formState, alert: 'Thank you for making a request. We will make contact you as soon as possible.' })
+        }).catch(e => {
+            setFormState({ ...formState, alert: 'We are sorry, but we are unable to process your request at this time.' })
+        })
     }
 
 
@@ -42,6 +47,7 @@ const Contact = () => {
             <SectionTitle id='contact'>Contact Me</SectionTitle>
 
                 <ContactForm onSubmit={handleFormSubmit}>
+                    <p>{formState.alert}</p>
                     <input /* NAME */
                         value={formState.name}
                         name='name'
@@ -68,10 +74,9 @@ const Contact = () => {
 
                     <SubmitButton type='submit'>Submit</SubmitButton>
                 </ContactForm>
-
-            
-            
-            <Footer></Footer>
+           
+            {/**/}
+            <Footer />
         </Fragment>
         
     )

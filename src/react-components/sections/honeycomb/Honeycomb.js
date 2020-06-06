@@ -58,9 +58,9 @@ class Honeycomb extends Component {
 
                 <Fog />
 
-                <GradientShield 
+                {/*<GradientShield 
                     style={{ top: '159vh',
-                        transform: 'rotate(180deg)', }} />
+                        transform: 'rotate(180deg)', }} />*/}                
             </Top>   
         )
     }
