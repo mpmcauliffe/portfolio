@@ -49,7 +49,7 @@ export default canvas => {
 
     let loader = new ColladaLoader()
     /* DEVELOPMENT: uncomment 52 - 61 */
-    loader.load('src/assets/models/3Dhex-3/3Dhex.dae', (collada) => {
+    loader.load('src/react-components/components/honeycomb/three/3Dhex-3/3Dhex.dae', (collada) => {
         let hexon = collada.scene
 
         

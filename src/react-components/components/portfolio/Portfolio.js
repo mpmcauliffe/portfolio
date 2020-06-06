@@ -19,7 +19,7 @@ const Portfolio = () => {
                     <Card key={project.name}>
                         <div className='card-inner'>
                             <div className='card-front'>
-                                <img src={require(`${project.coverImg}`)} alt={project.alt} />
+                                <img src={require(`${project.coverImg}`).default} alt={project.alt} />
                             </div>
                             <div className='card-back'>
                                 <CardBacking 

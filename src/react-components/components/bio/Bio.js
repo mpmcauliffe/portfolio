@@ -32,7 +32,7 @@ const Bio = () => {
                         <img
                             alt='bear'
                             style={{ height: '35rem', width: '29rem', }} 
-                            src={require('../../../assets/images/7.png')} />
+                            src={require('./images/7.png').default} />
                     </BioPicture>
                     <SkillContent>{bioText}</SkillContent>
                 </div>

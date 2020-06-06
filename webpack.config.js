@@ -29,9 +29,11 @@ module.exports = {
                     loader: 'three-collada-loader'
                 }
             }, {
-                test: /\.(png|svg|jpg|gif)$/,
+                test: /\.(png|jpe?g|gif)$/i,
                 use: [
-                    'file-loader'
+                    {
+                        loader: 'file-loader',
+                    },
                 ]
             },
         ]
