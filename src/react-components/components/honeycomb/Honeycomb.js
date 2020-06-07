@@ -22,7 +22,7 @@ class Honeycomb extends Component {
             <Top>
                 {/**/}
                 
-<HexCanvas 
+            <HexCanvas 
                     id='honeycomb'
                     ref={element => this.threeRootElement = element} />
                 {/*<div 
@@ -32,8 +32,8 @@ class Honeycomb extends Component {
                         background: '#05090A', }} />*/}
                 {/**/} 
                 <NamePlaque>
-                    <h1 style={{ color: '#20343d', }}>Michael McAuliffe</h1>
-                    <h2 style={{ color: '#20343d', }}>Fullstack Developer</h2>
+                    <h1 style={{ color: '#46494D', }}>Michael McAuliffe</h1>
+                    <h2 style={{ color: '#46494D', }}>Frontend Developer</h2>
 
                     <Link
                         activeClass='active'
@@ -44,7 +44,7 @@ class Honeycomb extends Component {
                         duration= {500} >
 
                         <NavButton>
-                            <h3>Check This Out &emsp; </h3>
+                            <h3>check this out &emsp; </h3>
                             <DownArrow />
                         </NavButton>
                     </Link>

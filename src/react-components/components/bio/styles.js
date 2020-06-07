@@ -55,14 +55,14 @@ export const ListOutContainer = styled.div`
 export const SkillPolygon = styled.div`
     height: 10rem;
     width: 10rem;
-    background: #cf78e0;
+    background: ${props => props.theme.secondary};
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
 `
 export const SkillTitle = styled.h3`
     text-align: center;
-    color: #E09F3E;
+    color: ${props => props.theme.warmGray}
 `
 export const SkillContent = styled.h4`
     text-align: center;
-    color: #e8f8ff;
+    color: ${props => props.theme.warmGray};
 `

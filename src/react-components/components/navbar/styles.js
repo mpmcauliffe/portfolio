@@ -7,12 +7,13 @@ export const Nav = styled.div`
     height: 10vh;
     min-height: 7vh;
     width: 100vw;
-    top: ${props => (props.traveling ? '-2px' : '150vh')};
+    top: ${props => (props.traveling ? '-2px' : '100vh')};
     z-index: 50;
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
-    background: #1C3339;
+    /* background: #1C3339; */
+    background: ${props => props.theme.primary};
 
     /* @media (max-width: 769px) {
         justify-content: flex-start;
@@ -22,13 +23,14 @@ export const Nav = styled.div`
 export const Home = styled.div`
     height: 4rem;
     width: 3.5rem;
-    background: #78C0E0;
+    background: ${props => props.theme.primaryLight};
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     transition: 700ms;
 
     &:hover {
         cursor: pointer;
-        background: #E09F3E;
+        background: ${props => props.theme.secondary};
+        /* background: #E09F3E; */
         /* transform: rotate(180deg); */
         clip-path: polygon(87% 0, 87% 61%, 100% 61%, 50% 100%, 0 61%, 13% 61%, 13% 0);
         transform: rotate(180deg);
@@ -56,12 +58,12 @@ export const Menu = styled.li`
     list-style: none;
     float: right;
     font-size: 2rem;
-    color: #78C0E0;
+    color: ${props => props.theme.primaryLight};
     transition: 700ms;
 
     &:hover, > .active {
         cursor: pointer;
-        color: #E09F3E;
+        color: ${props => props.theme.secondary};
         /* border-bottom: .1rem solid #E09F3E; */
     }
 `

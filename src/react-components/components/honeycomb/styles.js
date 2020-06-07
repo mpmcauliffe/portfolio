@@ -37,7 +37,7 @@ export const NamePlaque = styled.div`
     left: 50%;
     margin-top: -25rem;
     margin-left: -31.5rem;
-    background: #C7D2D5;
+    background: ${props => props.theme.secondaryGray};
     /* border-radius: 3rem; */
     text-align: center;
     opacity: .7;
@@ -58,8 +58,10 @@ export const NavButton = styled.div`
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    color: #E09F3E;
-    background: #1C3339;
+    /* color: #E09F3E; */
+    /* background: #1C3339; */
+    color: ${props => props.theme.secondaryGray};
+    background: ${props => props.theme.primaryGray};
     transition: 700ms;
 
     &:hover {
@@ -78,7 +80,8 @@ export const NavButton = styled.div`
 export const DownArrow = styled.span`
     height: 3rem;
     width: 2.7rem;
-    background: #E09F3E;
+    /* background: #E09F3E; */
+    background: ${props => props.theme.secondaryGray};
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     transition: 700ms;
 `
