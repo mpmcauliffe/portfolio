@@ -29,28 +29,28 @@ const Contact = () => {
 
     const handleFormSubmit = e => {
         e.preventDefault()
-console.log('submit')
-        // const { name, email, message, } = formState
-        // const fullMessage = `${message} Email: ${email}`
 
-        // const templateParams = {
-        //     from_name: name,
-        //     to_name: 'Michael',
-        //     subject: 'A message form your portfolio',
-        //     message_html: fullMessage,
-        //     sender_email: email
-        // }
+        const { name, email, message, } = formState
+        const fullMessage = `${message} Email: ${email}`
 
-        // emailjs.send(
-        //     'gmail',
-        //     'template_oxSdnufr',
-        //     templateParams,
-        //     'user_zQLOWi9I5SmNVHxZFAANB'
-        // ).then(res => {
-        //     setFormState({ ...formState, alert: 'Thank you for making a request. We will make contact you as soon as possible.' })
-        // }).catch(e => {
-        //     setFormState({ ...formState, alert: 'We are sorry, but we are unable to process your request at this time.' })
-        // })
+        const templateParams = {
+            from_name: name,
+            to_name: 'Michael',
+            subject: 'A message form your portfolio',
+            message_html: fullMessage,
+            sender_email: email
+        }
+
+        emailjs.send(
+            'gmail',
+            'template_oxSdnufr',
+            templateParams,
+            'user_zQLOWi9I5SmNVHxZFAANB'
+        ).then(res => {
+            setFormState({ ...formState, alert: 'Thank you for making a request. We will make contact you as soon as possible.' })
+        }).catch(e => {
+            setFormState({ ...formState, alert: 'We are sorry, but we are unable to process your request at this time.' })
+        })
     }
 
 

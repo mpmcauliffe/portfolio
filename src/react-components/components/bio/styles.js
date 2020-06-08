@@ -6,8 +6,8 @@ import { colorTheme } from '../../appStyles'
  *  BIO 
  */
 export const BioPicture = styled.div`
-    height: 50rem;
-    width: 33rem;
+    height: 35rem;
+    width: 29rem;
     background: transparent;
     /* border: .2rem solid #e8f8ff; */
     /* box-shadow: inset 3rem 4rem 2rem #000; */
@@ -15,7 +15,7 @@ export const BioPicture = styled.div`
     /* clip-path: polygon(50% 0%, 100% 14%, 100% 86%, 50% 100%, 0 86%, 0 14%); */
 
     @media (max-width: 1224px) {
-        margin-bottom: 5rem;
+        /* margin-bottom: 5rem; */
     }
 
     @media (max-width: 769px) {
@@ -62,7 +62,11 @@ export const SkillTitle = styled.h3`
     text-align: center;
     color: ${props => props.theme.warmGray}
 `
-export const SkillContent = styled.h4`
-    text-align: center;
+export const SkillContent = styled.p`
+    font-size: 1.9rem;
     color: ${props => props.theme.warmGray};
+
+    @media (max-width: 767px) {
+        text-align: center;
+    }
 `

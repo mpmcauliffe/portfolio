@@ -24,10 +24,17 @@ export const Partition = styled.div`
 `
 export const SmallContainer = styled.div`
     display: flex;
-    width: 24rem;
-    flex-direction: column;
+    width: ${props => props.biopic ? '100%' : '24rem'};
+    /* max-width: ${props => props.biopic ? '100rem' : '24rem'}; */
+    flex-direction: ${props => props.biopic ? 'row' : 'column'};
+    justify-content: ${props => props.biopic ? 'space-between' : ''};
     align-items: center;
     margin-bottom: 3rem;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        /* justify-content: center; */
+    }
 `
 
 
