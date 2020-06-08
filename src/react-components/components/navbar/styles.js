@@ -12,8 +12,11 @@ export const Nav = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
-    /* background: #1C3339; */
-    background: ${props => props.theme.primary};
+    /* background: ${props => props.theme.primary}; */
+    background: ${props => props.theme.primaryGray};
+
+    /* border-top: .2rem solid ${props => props.theme.primaryLight};
+    border-bottom: .2rem solid ${props => props.theme.primaryLight}; */
 
     /* @media (max-width: 769px) {
         justify-content: flex-start;
@@ -23,7 +26,7 @@ export const Nav = styled.div`
 export const Home = styled.div`
     height: 4rem;
     width: 3.5rem;
-    background: ${props => props.theme.primaryLight};
+    background: ${props => props.theme.secondaryGray};
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     transition: 700ms;
 
@@ -58,7 +61,7 @@ export const Menu = styled.li`
     list-style: none;
     float: right;
     font-size: 2rem;
-    color: ${props => props.theme.primaryLight};
+    color: ${props => props.theme.secondaryGray};
     transition: 700ms;
 
     &:hover, > .active {

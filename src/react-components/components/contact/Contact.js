@@ -10,10 +10,22 @@ const Contact = () => {
         email: '',
         message: '',
         alert: 'Information will only be used for the purposes of completing your request.',
+        isComplete: false,
     })
 
 
-    const handleChange = (e) => setFormState({ ...formState, [e.target.name]: e.target.value })
+    const handleChange = (e) => {
+        setFormState({ ...formState, [e.target.name]: e.target.value })
+        
+        // const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        // const isEmail = re.test(formState.email)
+
+        // if (formState.name.length > 0 && formState.message.length > 0 && isEmail) {
+        //     setFormState({ ...formState, isComplete: true })
+        // } else {
+        //     setFormState({ ...formState, isComplete: false })
+        // }
+    }
 
     const handleFormSubmit = e => {
         e.preventDefault()
@@ -72,7 +84,11 @@ const Contact = () => {
                         placeholder='Message'
                         required />
 
-                    <SubmitButton type='submit'>Submit</SubmitButton>
+                    <SubmitButton 
+                        type='submit'
+                        isComplete={formState.isComplete} >
+                        Submit
+                    </SubmitButton>
                 </ContactForm>
            
             {/**/}

@@ -26,7 +26,7 @@ export const HexCanvas = styled.div`
     width: 100vw;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background: #05090A;
+    background: ${props => props.theme.midnight};
 `
 export const NamePlaque = styled.div`
     position: absolute;

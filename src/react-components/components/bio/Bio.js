@@ -44,7 +44,7 @@ const Bio = () => {
                             style={{ flexDirection: 'column', alignItems: 'flex-start', }}>
 
                             <SkillTitle
-                                style={{ textAlign: 'left', color: '#9E2A2B', marginBottom: '1rem' }}
+                                style={{ textAlign: 'left', color: '#6e2239', marginBottom: '1rem' }}
 
                             >   {key}
                             </SkillTitle>
@@ -52,7 +52,7 @@ const Bio = () => {
                                 {listOut[key].map(value => (
                                     <SkillContent
                                         key={value}
-                                        style={{ textAlign: 'left', color: '#05090A', margin: '1rem 0', }}
+                                        style={{ textAlign: 'left', color: '#63666B', margin: '1rem 0', }}
 
                                     >   {value}
                                     </SkillContent>

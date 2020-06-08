@@ -1,13 +1,12 @@
 import React, { Fragment } from 'react'
 import ReactDOM from 'react-dom'
 import { ThemeProvider, } from 'styled-components'
-import { theme } from './themes/theme'
+import { GlobalStyle, themeGray, themeLight, } from './themes'
 import CanvasPrime from './react-components/CanvasPrime'
-import GlobalStyle from './themes/globalStyle'
 
 
 ReactDOM.render(
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={themeGray}>
         <GlobalStyle />
         <CanvasPrime />
     </ThemeProvider>,

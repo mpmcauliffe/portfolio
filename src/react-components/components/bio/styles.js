@@ -32,8 +32,8 @@ export const ListOutContainer = styled.div`
     align-self: center;
     margin: 0 auto;
     padding: 10rem 0 10rem 10rem;
-    background: #C7D2D5;
-    border: .1rem solid #05090A;
+    background: ${props => props.theme.secondaryGray};
+    border: .1rem solid ${props => props.theme.midnight};
     opacity: .7;
     /* border-radius: 3rem; */
 

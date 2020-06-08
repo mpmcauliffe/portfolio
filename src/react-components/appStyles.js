@@ -38,8 +38,8 @@ export const SectionTitle = styled.h1`
     position: relative;
     text-align: center;
     font-weight: 400;
-    /* color: #20343d; */
-    color: ${props => props.theme.primaryGray};
+    /* color: ${props => props.theme.primaryGray}; */
+    color: ${props => props.theme.secondaryGray};
     margin-top: 0;
     padding-top: 10rem;
     z-index: 10;
