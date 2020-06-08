@@ -61,7 +61,7 @@ export default canvas => {
     })
 
     /* PRODUCTION: uncomment 64 - 73 */
-    //     loader.load('./3Dhex.dae', (collada) => {
+    // loader.load('./3Dhex.dae', (collada) => {
     //     let hexon = collada.scene
 
         

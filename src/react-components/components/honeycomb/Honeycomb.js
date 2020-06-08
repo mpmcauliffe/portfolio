@@ -22,7 +22,7 @@ class Honeycomb extends Component {
             <Top>
                 {/**/}
                 
-            <HexCanvas 
+                <HexCanvas 
                     id='honeycomb'
                     ref={element => this.threeRootElement = element} />
                 {/*<div 

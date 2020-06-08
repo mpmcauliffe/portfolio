@@ -69,6 +69,10 @@ export const Menu = styled.li`
         color: ${props => props.theme.secondary};
         /* border-bottom: .1rem solid #E09F3E; */
     }
+
+    @media (max-width: 480px) {
+        font-size: 1.6rem;
+    }
 `
 //clip-path: polygon(75% 0, 75% 61%, 100% 61%, 50% 100%, 0 61%, 25% 61%, 25% 0);
 //clip-path: polygon(50% 29%, 100% 0, 100% 100%, 50% 69%, 0 100%, 0 0);

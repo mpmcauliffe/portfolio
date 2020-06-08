@@ -36,7 +36,6 @@ export const ContactForm = styled.form`
         color: ${props => props.theme.primaryGray};
     }
 
-    
     input:-webkit-autofill,
     input:-webkit-autofill:hover, 
     input:-webkit-autofill:focus,
