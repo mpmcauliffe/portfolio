@@ -24,4 +24,4 @@ export const InnerCard = styled.div`
         transform: rotateY(180deg)
     }
 `
-export const 
+//export const 

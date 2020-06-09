@@ -11,7 +11,9 @@ const CanvasPrime = () =>
         <BodyContainer>
 
             <Navbar />
-            
+            {/** <div className='up-chev' />
+            <div className='up-chev' style={{ top: '213vh' }} />*/}
+
             <Bio />
             <Portfolio />
 

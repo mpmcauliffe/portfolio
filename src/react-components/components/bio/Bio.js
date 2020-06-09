@@ -13,12 +13,12 @@ const Bio = () => {
         <Fragment>
             <SectionTitle id='about'>About</SectionTitle>    
 
-            <Partition>
+            <Partition style={{ marginBottom: '10vh' }}>
                 {skillsText.map(skill => (
                     <SmallContainer key={skill.title}>
                         <SkillTitle>{skill.title}</SkillTitle>
                         <SkillPolygon />
-                        <SkillContent>{skill.content}</SkillContent>
+                        <SkillContent style={{ textAlign: 'center' }}>{skill.content}</SkillContent>
                     </SmallContainer>
                 ))}
             </Partition>
@@ -26,17 +26,12 @@ const Bio = () => {
 
             <Partition style={{ justifyContent: 'space-between', }}>
                 {/**/}
-                <SmallContainer
-                    biopic
-                    //style={{ width: '40rem', margin: '0 auto' }}
-                    > 
-                    <BioPicture>
-                        <img
-                            alt='bear'
-                            style={{ height: '35rem', width: '29rem', }} 
-                            src={require('./images/7.png').default} />
-                    </BioPicture>
-                    <SkillContent style={{ width: '40rem' }}>{bioText}</SkillContent>
+                <SmallContainer biopic> 
+                    <img
+                        alt='bear'
+                        style={{ height: '35rem', width: '29rem', }} 
+                        src={require('./images/7.png').default} />
+                    <SkillContent style={{ width: '35rem' }}>{bioText}</SkillContent>
                 </SmallContainer>
 
                 <ListOutContainer>

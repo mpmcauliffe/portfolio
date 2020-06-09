@@ -5,10 +5,23 @@ import styled from 'styled-components'
  *  CONTAINERS
  */
 export const BodyContainer = styled.div`
+    position: absolute;
     max-height: 1000vh;
     width: 100%;
-    /* padding-bottom: 40vh; */
+    z-index: -10;
     background: ${props => props.theme.midnight};
+
+    .up-chev {
+        position: absolute;
+        height: 77vh;
+        width: 100vw;
+        top: 101vh;
+        z-index: -1;
+        background: #810424; 
+        opacity: .2;
+        /* transform: skewY(-20deg); */
+        /* clip-path: polygon(100% 65%, 50% 42%, 0 65%, 0 36%, 50% 13%, 100% 36%); */
+    }
 `
 export const Partition = styled.div`
     display: flex; 
@@ -27,7 +40,7 @@ export const SmallContainer = styled.div`
     width: ${props => props.biopic ? '100%' : '24rem'};
     /* max-width: ${props => props.biopic ? '100rem' : '24rem'}; */
     flex-direction: ${props => props.biopic ? 'row' : 'column'};
-    justify-content: ${props => props.biopic ? 'space-between' : ''};
+    justify-content: ${props => props.biopic ? 'space-evenly' : ''};
     align-items: center;
     margin-bottom: 3rem;
 
@@ -75,6 +88,10 @@ export const GradientShield = styled.div`
 
     /* Permalink - use to edit and share this gradient: 
     https://colorzilla.com/gradient-editor/#000000+0,000000+51,ffffff+100&0+1,0+1,0.65+51 */
+`
+
+export const Up = styled.div`
+    
 `
 
 // original GradientShield

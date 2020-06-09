@@ -2,27 +2,32 @@
 
 export const skillsText = [
     {
-        title: 'Creative',
+        title: 'Inquisitive',   // lightbulb ?
         content: 'Vestibulum dictum magna non arcu blandit id hendrerit neque dictum',
     }, {
-        title: 'Robust',
-        content: 'Pellentesque id ultrices mi, et dapibus orci Nulla vestibulum ex',
+        title: 'Fastidious',    // bonzai tree
+        content: 'Focusing on detail oriented work to create a product that is intuitive to end users',
     }, {
-        title: 'Xxxxxx',
+        title: 'Versatile',    //
         content: 'Cras fringilla lorem eget leo volutpat porta In hac habitasse',
     }, {
-        title: 'Xxxxxxx',
-        content: 'Donec sit amet nisi molestie, maximus purus vitae, condimentum velit.',
+        title: 'Creative Vision',  // archway puzzle pipes
+        content: 'Problem solving ',
     }
 ]
 
-export const bioText = 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum' + 
-                       'dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,' + 
-                       'sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim' + 
-                       'veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+// export const bioText = 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum' + 
+//                        'dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,' + 
+//                        'sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim' + 
+//                        'veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
 
 export const listOut = {
     'Languages': ['HTML', 'CSS', 'Javascript'],
-    'Tools': ['Node JS', 'React', 'Mongo DB', 'Sass', 'Auth0', 'Github', 'HTML5 Canvas'],
+    'Tools': ['React', 'TypeScript', 'Node JS',  'Mongo DB', 'Sass', 'Auth0', 'Github', 'Redux', 'GraphQL', 'HTML5 Canvas', 'jQuery'],
     'Graphics': ['Photoshop', 'Illustrator', 'InDesign', 'Adobe Animate', 'UI Design', 'Logo Design'],
 }
+
+export const bioText = `I am an aspiring frontend developer who is enthuastic React. 
+                        I like to build components that facilitate a smooth user 
+                        experience and deliver information user friendly form.`
+
