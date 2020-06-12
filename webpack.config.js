@@ -28,14 +28,17 @@ module.exports = {
                 use: {
                     loader: 'three-collada-loader'
                 }
-            }, {
-                test: /\.(png|jpe?g|gif)$/i,
+            }, { // /\.(png|jp(e*)g|svg|gif)$/
+                test: /\.(png|jp(e*)g|svg|gif)$/,
                 use: [
                     {
                         loader: 'file-loader',
+                        options: {
+                            name: 'images/[hash]-[name].[ext]',
+                        },
                     },
                 ]
-            },
+            }, 
         ]
     },
     plugins: [
@@ -44,3 +47,9 @@ module.exports = {
         })
     ]
 }
+
+
+// {
+//     test: /\.svg$/,
+//     loader: 'svg-inline-loader'
+// },

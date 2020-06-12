@@ -2,7 +2,7 @@
 export const themeGray = {
     primary: '#335C67', //'#2A4C55',
     primaryLight: '#78C0E0',
-    secondary: '#c62', // '#810424', // '#6e2239', // '#9c3321', // '#d4523b', //'#de2909',
+    secondary: '#ff7429', // '#ff5900', // '#c62', // '#810424', // '#6e2239', // '#9c3321', // '#d4523b', //'#de2909',
 
     // GRAY
     primaryGray: '#63666B',

@@ -52,6 +52,10 @@ export const ListOutContainer = styled.div`
         padding: 3rem 3rem;
     }
 `
+export const SkillImage = styled.img`
+    height: 15rem;
+    width: 15rem;
+`
 export const SkillPolygon = styled.div`
     height: 10rem;
     width: 10rem;

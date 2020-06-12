@@ -3,21 +3,32 @@ import { Partition, SectionTitle, SmallContainer, } from '../../appStyles'
 import { BioPicture,
     ListOutContainer,
     SkillContent, 
+    SkillImage,
     SkillPolygon, 
     SkillTitle, } from './styles'
 import { bioText, listOut, skillsText, } from './text'
+import bonzai from './skills/2.svg'
 
-
+//<IconSVG src={require('svg-inline!../../icons/bug.svg')} />
+// require(`./skills/${index+1}.svg`).default
 const Bio = () => {
     return (
         <Fragment>
             <SectionTitle id='about'>About</SectionTitle>    
 
             <Partition style={{ marginBottom: '10vh' }}>
-                {skillsText.map(skill => (
+                {skillsText.map((skill, index) => (
                     <SmallContainer key={skill.title}>
                         <SkillTitle>{skill.title}</SkillTitle>
-                        <SkillPolygon />
+                        {/**<SkillPolygon /> */}
+                        {/**<img
+                            alt='skill img'
+                            src={bonzai} /> */}
+                        <SkillImage
+                            alt='skill img'
+                            src={require(`./skills/${index+1}.svg`).default} />
+                            
+                        
                         <SkillContent style={{ textAlign: 'center' }}>{skill.content}</SkillContent>
                     </SmallContainer>
                 ))}
