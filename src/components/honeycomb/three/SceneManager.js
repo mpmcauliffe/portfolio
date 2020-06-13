@@ -49,10 +49,9 @@ export default canvas => {
 
     let loader = new ColladaLoader()
     /* DEVELOPMENT: uncomment 52 - 61 */
-    loader.load('src/react-components/components/honeycomb/three/3Dhex-3/3Dhex.dae', (collada) => {
+    loader.load('src/components/honeycomb/three/3Dhex-3/3Dhex.dae', (collada) => {
         let hexon = collada.scene
 
-        
         hexon.children[2].children[0].material.materials[0] = new THREE.MeshLambertMaterial({ color: new THREE.Color('#010101') })
         //hexon.children[2].children[0].material.materials[0] = new THREE.MeshPhysicalMaterial({ color: new THREE.Color('#000000') })
         hexon.children[2].children[0].material.materials[1] = new THREE.MeshPhongMaterial({ color: new THREE.Color(0x0) })
@@ -64,7 +63,6 @@ export default canvas => {
     // loader.load('./3Dhex.dae', (collada) => {
     //     let hexon = collada.scene
 
-        
     //     hexon.children[2].children[0].material.materials[0] = new THREE.MeshLambertMaterial({ color: new THREE.Color('#010101') })
     //     //hexon.children[2].children[0].material.materials[0] = new THREE.MeshPhysicalMaterial({ color: new THREE.Color('#000000') })
     //     hexon.children[2].children[0].material.materials[1] = new THREE.MeshPhongMaterial({ color: new THREE.Color(0x0) })

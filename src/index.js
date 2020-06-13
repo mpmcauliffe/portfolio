@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import ReactDOM from 'react-dom'
 import { ThemeProvider, } from 'styled-components'
 import { GlobalStyle, themeGray, themeLight, } from './themes'
-import CanvasPrime from './react-components/CanvasPrime'
+import CanvasPrime from './components/CanvasPrime'
 
 
 ReactDOM.render(

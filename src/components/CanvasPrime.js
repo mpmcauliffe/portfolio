@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { createGlobalStyle, ThemeProvider, } from 'styled-components'
 import { BodyContainer, GradientShield, } from './appStyles'
-import { Bio, Blog, Contact, Honeycomb, Navbar, Portfolio, } from './components'
+import { Bio, Blog, Contact, Honeycomb, Navbar, Portfolio, } from '../components'
 
 
 const CanvasPrime = () => 

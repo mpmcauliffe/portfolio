@@ -2,19 +2,17 @@
 
 export const skillsText = [
     {
-        title: 'Inquisitive',   // lightbulb ?
-        content: 'Vestibulum dictum magna non arcu blandit id hendrerit neque dictum',
+        title: 'Inquisitive',  
+        content: 'Curiosity isn\'t only the desire to learn; it is the confidence to learn.',
     }, {
-        title: 'Fastidious',    // bonzai tree   
-        content: 'Detail oriented products work to create an intuitive user experience.',
+        title: 'Fastidious',  
+        content: 'Detail oriented products create an intuitive user experience.',
     }, {
         title: 'Versatile',    //
         content: 'Cras fringilla lorem eget leo volutpat porta In hac habitasse',
     }, {
-        title: 'Creative Vision',  // archway puzzle pipes
+        title: 'Creative Vision', 
         content: 'Problem solving gives rise to creativity. Creativity is the foundation of strategy.', 
-            //'Problems present an opportunity to observe the world a differently. Then they inspire the creativity to solve them.',
-            //Creativity is the opportunity presented by problem solving.
     }
 ]
 

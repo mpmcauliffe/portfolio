@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import { BrowserRouter as Router, Link } from 'react-router-dom'
-import { Partition, SectionTitle, } from '../../appStyles'
+import { Partition, SectionTitle, } from '../appStyles'
 import { CardBacking, IconSet, Info, LinkLabel, NavLinks, } from './styles'
 import { Card } from './stylesCard'
 import { projects, } from './text'

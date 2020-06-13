@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colorTheme } from '../../appStyles'
+import { colorTheme } from '../appStyles'
 
 
 /*

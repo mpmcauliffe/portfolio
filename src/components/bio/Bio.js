@@ -1,16 +1,14 @@
 import React, { Fragment, } from 'react'
-import { Partition, SectionTitle, SmallContainer, } from '../../appStyles'
+import { Partition, SectionTitle, SmallContainer, } from '../appStyles'
 import { BioPicture,
     ListOutContainer,
     SkillContent, 
     SkillImage,
-    SkillPolygon, 
     SkillTitle, } from './styles'
 import { bioText, listOut, skillsText, } from './text'
 import bonzai from './skills/2.svg'
 
-//<IconSVG src={require('svg-inline!../../icons/bug.svg')} />
-// require(`./skills/${index+1}.svg`).default
+
 const Bio = () => {
     return (
         <Fragment>
@@ -52,7 +50,7 @@ const Bio = () => {
                             style={{ flexDirection: 'column', alignItems: 'flex-start', }}>
 
                             <SkillTitle
-                                style={{ textAlign: 'left', color: '#6e2239', marginBottom: '1rem' }}
+                                style={{ textAlign: 'left', color: '#05090A', marginBottom: '1rem' }}
 
                             >   {key}
                             </SkillTitle>

@@ -1,6 +1,6 @@
 import React, { Fragment, useState, } from 'react'
 import * as emailjs from 'emailjs-com'
-import { GradientShield, Partition, SectionTitle, SmallContainer, } from '../../appStyles'
+import { GradientShield, Partition, SectionTitle, SmallContainer, } from '../appStyles'
 import { ContactForm, Footer, SubmitButton, } from './styles'
 
 

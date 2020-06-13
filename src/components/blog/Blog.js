@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { Partition, SectionTitle, SmallContainer, } from '../../appStyles'
+import { Partition, SectionTitle, SmallContainer, } from '../appStyles'
 
 
 const Blog = () => {
