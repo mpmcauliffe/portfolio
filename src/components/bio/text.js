@@ -3,13 +3,13 @@
 export const skillsText = [
     {
         title: 'Inquisitive',  
-        content: 'Curiosity isn\'t only the desire to learn; it is the confidence to learn.',
+        content: 'Curiosity is not only the desire to learn; it is the confidence to learn.',
     }, {
         title: 'Fastidious',  
         content: 'Detail oriented products create an intuitive user experience.',
     }, {
         title: 'Versatile',    //
-        content: 'Cras fringilla lorem eget leo volutpat porta In hac habitasse',
+        content: '',
     }, {
         title: 'Creative Vision', 
         content: 'Problem solving gives rise to creativity. Creativity is the foundation of strategy.', 
