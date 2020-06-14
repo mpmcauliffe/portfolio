@@ -33,12 +33,12 @@ const Bio = () => {
             </Partition>
             
 
-            <Partition style={{ justifyContent: 'space-between', }}>
+            <Partition className='bio-pic'>
                 {/**/}
                 <SmallContainer biopic> 
                     <img
                         alt='bear'
-                        style={{ height: '35rem', width: '29rem', }} 
+                        style={{ height: '35rem', width: '29rem', }}
                         src={require('./images/7.png').default} />
                     <SkillContent style={{ width: '35rem' }}>{bioText}</SkillContent>
                 </SmallContainer>

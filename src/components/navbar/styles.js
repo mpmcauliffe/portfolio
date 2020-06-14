@@ -38,6 +38,19 @@ export const Home = styled.div`
         clip-path: polygon(87% 0, 87% 61%, 100% 61%, 50% 100%, 0 61%, 13% 61%, 13% 0);
         transform: rotate(180deg);
     }
+
+    @media (min-width: 1439px) {
+        height: 4.7rem;
+        width: 4rem;
+    }
+    @media (min-width: 1999px) {
+        height: 5.6rem;
+        width: 4.7rem;
+    }
+    @media (min-width: 2300px) {
+        height: 6.4rem;
+        width: 5.6rem;
+    }
 `
 
 export const UlMenu = styled.ul`
@@ -72,6 +85,15 @@ export const Menu = styled.li`
 
     @media (max-width: 480px) {
         font-size: 1.6rem;
+    }
+    @media (min-width: 1439px) {
+        font-size: 2.5rem;
+    }
+    @media (min-width: 1999px) {
+        font-size: 3rem;
+    }
+    @media (min-width: 2300px) {
+        font-size: 3.5rem;
     }
 `
 //clip-path: polygon(75% 0, 75% 61%, 100% 61%, 50% 100%, 0 61%, 25% 61%, 25% 0);

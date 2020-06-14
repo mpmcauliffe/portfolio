@@ -31,9 +31,10 @@ export const Partition = styled.div`
     margin: 10vh auto 25vh auto; 
     flex-wrap: wrap;
 
-    @media (max-width: 769px) {
-        margin-bottom: 20vh;
+    .bio-pic {
+        justify-content: space-between;
     }
+
 `
 export const SmallContainer = styled.div`
     display: flex;
@@ -63,6 +64,16 @@ export const SectionTitle = styled.h1`
     margin-top: 0;
     padding-top: 10rem;
     z-index: 10;
+
+    @media (min-width: 1439px) {
+        font-size: 7rem;
+    }
+    @media (min-width: 1999px) {
+        font-size: 8.5rem;
+    }
+    @media (min-width: 2300px) {
+        font-size: 10rem;
+    }
 `
 
 
