@@ -9,7 +9,7 @@ export const skillsText = [
         content: 'Detail oriented products create an intuitive user experience.',
     }, {
         title: 'Versatile',    //
-        content: '',
+        content: 'Adaptability is an innovative approach to achieve goals from multiple perspectives.',
     }, {
         title: 'Creative Vision', 
         content: 'Problem solving gives rise to creativity. Creativity is the foundation of strategy.', 
