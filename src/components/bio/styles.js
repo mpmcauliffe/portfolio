@@ -22,6 +22,23 @@ export const BioPicture = styled.div`
         flex-basis: 100%;
     }
 `
+export const BioImage = styled.img`
+    height: 35rem;
+    width: 29rem;
+
+    @media (min-width: 1439px) {
+        height: 40rem;
+        width: 33rem;
+    }
+    @media (min-width: 1999px) {
+        height: 47rem;
+        width: 39rem;
+    }
+    @media (min-width: 2300px) {
+        height: 56rem;
+        width: 47rem;
+    }
+`
 
 
 /*

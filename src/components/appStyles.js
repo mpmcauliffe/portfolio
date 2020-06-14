@@ -47,7 +47,9 @@ export const SmallContainer = styled.div`
 
     @media (max-width: 767px) {
         flex-direction: column;
-        /* justify-content: center; */
+    }
+    @media (min-width: 1439px) {
+        margin-bottom: 10vh;
     }
 `
 

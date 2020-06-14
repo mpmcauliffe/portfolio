@@ -1,6 +1,6 @@
 import React, { Fragment, } from 'react'
 import { Partition, SectionTitle, SmallContainer, } from '../appStyles'
-import { BioPicture,
+import { BioImage,
     ListOutContainer,
     SkillContent, 
     SkillImage,
@@ -36,9 +36,8 @@ const Bio = () => {
             <Partition className='bio-pic'>
                 {/**/}
                 <SmallContainer biopic> 
-                    <img
-                        alt='bear'
-                        style={{ height: '35rem', width: '29rem', }}
+                    <BioImage
+                        alt='bio-image'
                         src={require('./images/7.png').default} />
                     <SkillContent style={{ width: '35rem' }}>{bioText}</SkillContent>
                 </SmallContainer>

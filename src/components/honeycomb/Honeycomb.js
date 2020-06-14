@@ -8,28 +8,28 @@ import { DownArrow,
     NamePlaque,
     NavButton, 
     Top,
-    Test,  } from './styles'
+    Test, } from './styles'
 
 
 class Honeycomb extends Component {
     componentDidMount() {
-        //threeEntryPoint(this.threeRootElement);
+        threeEntryPoint(this.threeRootElement)
     }
 
 
     render () {
         return (
             <Top>
-                {/*<HexCanvas 
+                {/**/}
+                <HexCanvas 
                     id='honeycomb'
-                    ref={element => this.threeRootElement = element} />*/}
+                    ref={element => this.threeRootElement = element} />
                 
-                <div 
+                {/*<div 
                     id='honeycomb'
                     style={{ height: '150vh',
                         width: '100vw',
-                        background: '#05090A', }} />
-                {/**/}
+                        background: '#05090A', }} />*/}
                 {/**/} 
                 <NamePlaque>
                     <h1 style={{ color: '#46494D', }}>Michael McAuliffe</h1>
