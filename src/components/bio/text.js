@@ -22,7 +22,7 @@ export const listOut = {
     'Graphics': ['Photoshop', 'Illustrator', 'InDesign', 'Adobe Animate', 'UI Design', 'Logo Design'],
 }
 
-export const bioText = `I am an aspiring frontend developer who is enthuastic React. 
+export const bioText = `I am an aspiring frontend developer who is enthusiastic React. 
                         I like to build components that facilitate a smooth user 
                         experience and deliver information user friendly form.`
 
