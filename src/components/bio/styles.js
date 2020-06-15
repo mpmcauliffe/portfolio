@@ -95,10 +95,6 @@ export const SkillPolygon = styled.div`
 export const SkillTitle = styled.h3`
     text-align: center;
     color: ${props => props.theme.warmGray};
-
-    @media (min-width: 1439px) {
-        font-size: 3.3rem;
-    }
 `
 export const SkillContent = styled.p`
     font-size: 1.9rem;
@@ -107,8 +103,13 @@ export const SkillContent = styled.p`
     @media (max-width: 767px) {
         text-align: center;
     }
-
     @media (min-width: 1439px) {
         font-size: 2.4rem;
+    }
+    @media (min-width: 1999px) {
+        font-size: 2.8rem;
+    }
+    @media (min-width: 2299px) {
+        font-size: 3.1rem;
     }
 `

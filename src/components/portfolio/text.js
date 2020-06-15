@@ -12,6 +12,7 @@ export const projects = [
         visitLink: 'https://racemate3d.herokuapp.com/',
         backgroundColor: '#f7f7f7',
         textColor: '#1c395c',
+        deployed: true,
         hov: '',
     }, {   // PIP-PRODUCERS
         name: 'Pip Producers',
@@ -26,6 +27,7 @@ export const projects = [
         visitLink: 'https://fierce-springs-23091.herokuapp.com/article/5d4faa613de5e36ca4e88000',
         backgroundColor: '#DAA520',
         textColor: '#393939',
+        deployed: true,
         hov: '',
     }, {    // BOOKWORMZ
         name: 'Bookwormz',
@@ -40,6 +42,7 @@ export const projects = [
         visitLink: '',
         backgroundColor: '#FBF8F9',
         textColor: '#275B70',
+        deployed: false,
         hov: '',
     }
 ]

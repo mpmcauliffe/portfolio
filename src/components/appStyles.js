@@ -35,6 +35,16 @@ export const Partition = styled.div`
         justify-content: space-between;
     }
 
+    @media (min-width: 1599px) {
+        width: ${props => props.portfolio ? '70%' : '90%'};
+    }
+    @media (min-width: 1999px) {
+        width: ${props => props.portfolio ? '60%' : '90%'};
+    }
+    @media (min-width: 2299px) {
+        width: ${props => props.portfolio ? '50%' : '85%'};
+    }
+
 `
 export const SmallContainer = styled.div`
     display: flex;
@@ -49,7 +59,15 @@ export const SmallContainer = styled.div`
         flex-direction: column;
     }
     @media (min-width: 1439px) {
+        width: ${props => props.biopic ? '80%' : '30rem'};
         margin-bottom: 10vh;
+    }
+    @media (min-width: 1999px) {
+        width: ${props => props.biopic ? '70%' : '35rem'};
+        margin-bottom: 15vh;
+    }
+    @media (min-width: 2299px) {
+        width: ${props => props.biopic ? '60%' : '40rem'};
     }
 `
 
@@ -57,7 +75,7 @@ export const SmallContainer = styled.div`
 /*
  *  TEXT
  */
-export const SectionTitle = styled.h1`
+export const SectionTitle = styled.h2`
     position: relative;
     text-align: center;
     font-weight: 400;
@@ -66,16 +84,6 @@ export const SectionTitle = styled.h1`
     margin-top: 0;
     padding-top: 10rem;
     z-index: 10;
-
-    @media (min-width: 1439px) {
-        font-size: 7rem;
-    }
-    @media (min-width: 1999px) {
-        font-size: 8.5rem;
-    }
-    @media (min-width: 2300px) {
-        font-size: 10rem;
-    }
 `
 
 

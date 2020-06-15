@@ -17,10 +17,10 @@ export const GlobalStyle = createGlobalStyle`
         height: 100vh;
     }
     h1 {
-        font-size: 5rem;
+        font-size: 6rem;
     }
     h2 {
-        font-size: 3rem;
+        font-size: 5rem;
     }
     h3 {
         font-size: 2.6rem;
@@ -32,4 +32,49 @@ export const GlobalStyle = createGlobalStyle`
     li {
         list-style: none;
     }
+
+    @media (min-width: 1439px) {
+        h1 {
+            font-size: 8rem;
+        }
+        h2 {
+            font-size: 7rem;
+        }
+        h3 {
+            font-size: 3.3rem;
+        }
+    }
+
+    @media (min-width: 1999px) {
+        h1 {
+            font-size: 9.5rem;
+        }
+        h2 {
+            font-size: 8.5rem;
+        }
+        h3 {
+            font-size: 3.8rem;
+        }
+    }
+
+    @media (min-width: 2299px) {
+        h1 {
+            font-size: 11rem;
+        }
+        h2 {
+            font-size: 10rem;
+        }
+        h3 {
+            font-size: 4.5rem;
+        }
+    }
 `
+// @media (min-width: 1439px) {
+//         font-size: 7rem;
+//     }
+//     @media (min-width: 1999px) {
+//         font-size: 8.5rem;
+//     }
+//     @media (min-width: 2300px) {
+//         font-size: 10rem;
+//     }

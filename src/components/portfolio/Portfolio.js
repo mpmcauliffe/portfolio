@@ -14,7 +14,7 @@ const Portfolio = () => {
         <Fragment>
             <SectionTitle id='portfolio'>Portfolio</SectionTitle>
         {/* coverImg info codeLink instructionsLink visitLink backgroundColor textColor hov */}
-            <Partition>
+            <Partition portfolio>
                 {projects.map(project => (
                     <Card key={project.name}>
                         <div className='card-inner'>
@@ -36,23 +36,26 @@ const Portfolio = () => {
                                                 <LinkLabel>Code</LinkLabel>
                                             </IconSet>
                                         </a>     
-
-                                        <a href={project.instructionsLink} style={{ textDecoration: 'none',}}>
-                                            <IconSet>
-                                                <i className='fa fa-info fa-2x' aria-hidden='true' />
-                                                <LinkLabel>Instructions</LinkLabel>
-                                            </IconSet>
-                                        </a>
-                                        
-                                        <a href={project.visitLink} style={{ textDecoration: 'none',}}>
-                                            <IconSet>
-                                                <i 
-                                                    className='fa fa-arrow-up fa-2x' 
-                                                    aria-hidden='true' 
-                                                    style={{ transform: 'rotate(45deg)'}} />
-                                                <LinkLabel>Visit</LinkLabel>
-                                            </IconSet>
-                                        </a>
+                                        {project.deployed && 
+                                            <Fragment>
+                                                <a href={project.instructionsLink} style={{ textDecoration: 'none',}}>
+                                                    <IconSet>
+                                                        <i className='fa fa-info fa-2x' aria-hidden='true' />
+                                                        <LinkLabel>Instructions</LinkLabel>
+                                                    </IconSet>
+                                                </a>
+                                                
+                                                <a href={project.visitLink} style={{ textDecoration: 'none',}}>
+                                                    <IconSet>
+                                                        <i 
+                                                            className='fa fa-arrow-up fa-2x' 
+                                                            aria-hidden='true' 
+                                                            style={{ transform: 'rotate(45deg)'}} />
+                                                        <LinkLabel>Visit</LinkLabel>
+                                                    </IconSet>
+                                                </a>
+                                            </Fragment>
+                                        }
                                     </Router>
                                                                                
                                     </NavLinks>

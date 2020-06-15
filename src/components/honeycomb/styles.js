@@ -30,26 +30,41 @@ export const HexCanvas = styled.div`
 `
 export const NamePlaque = styled.div`
     position: absolute;
-    height: 23rem;
-    width: 63rem;
+    /* height: 35rem; */
+    height: 0;
+    /* width: 63rem; */
     z-index: 3;
-    top: 50%;
+    margin-top: 5%;
+    /* top: 50%;
     left: 50%;
-    margin-top: -25rem;
-    margin-left: -31.5rem;
+    
+    margin-left: -31.5rem; */
     background: ${props => props.theme.secondaryGray};
     /* border-radius: 3rem; */
     text-align: center;
-    opacity: .7;
+    /* opacity: .7; */
+    opacity: 1;
     animation: ${tapeAnimation} 3s;
 
-    @media (max-width: 481px) {
-        height: 33rem;
+     @media (max-width: 481px) {
+        /* height: 33rem;
         width: 100vw;
         margin: 0;
         top: 5%;
-        left: 0;
+        left: 0; */
     }
+    /*@media (min-width: 1439px) {
+        height: 35rem;
+        width: 100rem;
+    }
+    @media (min-width: 1999px) {
+        height: 31rem;
+        width: 76rem;
+    }
+    @media (min-width: 2299px) {
+        height: 35rem;
+        width: 79rem;
+    } */
 `
 export const NavButton = styled.div`
     display: flex;
@@ -74,7 +89,7 @@ export const NavButton = styled.div`
     }
 
     @media (max-width: 480px) {
-        width: 85%;
+        width: 90%;
     }
 `
 export const DownArrow = styled.span`
@@ -98,6 +113,8 @@ export const Fog = styled.div`
     animation: ${fogAnimation} 20s;
 `
 export const Top = styled.div`
+    display: flex;
+    justify-content: center;
     background: #05090A; 
 `
 

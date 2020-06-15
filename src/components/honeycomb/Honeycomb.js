@@ -32,8 +32,8 @@ class Honeycomb extends Component {
                         background: '#05090A', }} />*/}
                 {/**/} 
                 <NamePlaque>
-                    <h1 style={{ color: '#46494D', }}>Michael McAuliffe</h1>
-                    <h2 style={{ color: '#46494D', }}>Frontend & React Developer</h2>
+                    <h1 style={{ color: '#FAF9F5', }}>Michael Paul McAuliffe</h1>
+                    <h3 style={{ color: '#FAF9F5', }}>Frontend & React Developer</h3>
 
                     <Link
                         activeClass='active'
