@@ -48,7 +48,7 @@ export const ListOutContainer = styled.div`
     display: flex;
     align-self: center;
     margin: 0 auto;
-    padding: 10rem 0 10rem 10rem;
+    padding: 4rem;
     background: ${props => props.theme.secondaryGray};
     border: .1rem solid ${props => props.theme.midnight};
     opacity: .7;

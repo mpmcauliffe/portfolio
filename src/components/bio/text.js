@@ -19,7 +19,7 @@ export const skillsText = [
 export const listOut = {
     'Languages': ['HTML', 'CSS', 'Javascript'],
     'Tools': ['React', 'TypeScript', 'Node JS',  'Mongo DB', 'Sass', 'Auth0', 'Github', 'Redux', 'GraphQL', 'HTML5 Canvas', 'jQuery'],
-    'Graphics': ['Photoshop', 'Illustrator', 'InDesign', 'Adobe Animate', 'UI Design', 'Logo Design'],
+    'Graphics': ['Photoshop', 'Illustrator', 'InDesign', 'Adobe XD', 'Adobe Animate', 'UI Design', 'Logo Design'],
 }
 
 export const bioText = `I am an aspiring frontend developer who is enthusiastic React. 
