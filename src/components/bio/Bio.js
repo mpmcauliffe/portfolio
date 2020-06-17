@@ -18,15 +18,10 @@ const Bio = () => {
                 {skillsText.map((skill, index) => (
                     <SmallContainer key={skill.title}>
                         <SkillTitle>{skill.title}</SkillTitle>
-                        {/**<SkillPolygon /> */}
-                        {/**<img
-                            alt='skill img'
-                            src={bonzai} /> */}
                         <SkillImage
                             alt='skill img'
                             src={require(`./skills/${index+1}.svg`).default} />
-                            
-                        
+                                                
                         <SkillContent style={{ textAlign: 'center' }}>{skill.content}</SkillContent>
                     </SmallContainer>
                 ))}
@@ -43,13 +38,21 @@ const Bio = () => {
                 </SmallContainer>
 
                 <ListOutContainer>
-                    {Object.keys(listOut).map(key => (
+                    {Object.keys(listOut).map((key, index) => (
                         <SmallContainer 
                             key={key}
-                            style={{ flexDirection: 'column', alignItems: 'center', }}>
+                            style={{ flexDirection: 'column', alignItems: 'center', margin: '0' }}>
+
+                            <SkillImage
+                                tool
+                                alt='lang tools design'
+                                src={require(`./list/${index+1}.svg`).default} />
 
                             <SkillTitle
-                                style={{ textAlign: 'center', color: '#05090A', marginBottom: '1rem' }}
+                                style={{ textAlign: 'center', 
+                                    fontSize: '2rem',
+                                    color: '#780470', 
+                                    marginBottom: '1rem' }}
 
                             >   {key}
                             </SkillTitle>
@@ -57,7 +60,10 @@ const Bio = () => {
                                 {listOut[key].map(value => (
                                     <SkillContent
                                         key={value}
-                                        style={{ textAlign: 'center', color: '#63666B', margin: '1rem 0', }}
+                                        style={{ textAlign: 'center', 
+                                            fontSize: '1.5rem', 
+                                            color: '#4d2f4a', 
+                                            margin: '1rem 0', }}
 
                                     >   {value}
                                     </SkillContent>

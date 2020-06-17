@@ -62,6 +62,7 @@ export const ListOutContainer = styled.div`
         padding: 4rem 0 4rem 6rem;
         width: 90%;
         margin: 5rem auto 0 auto;
+        padding: 2rem;
     }
     @media (max-width: 481px) {
         flex-direction: column;
@@ -70,8 +71,13 @@ export const ListOutContainer = styled.div`
     }
 `
 export const SkillImage = styled.img`
-    height: 15rem;
-    width: 15rem;
+    height: ${props => props.tool ? '7rem' : '15rem'};
+    width: ${props => props.tool ? '7rem' : '15rem'};
+    opacity: ${props => props.tool ? '.5' : '1'};
+
+    @media (max-width: 482px) {
+        margin-top: ${props => props.tool ? '3rem' : '0'};
+    }
 
     @media (min-width: 1439px) {
         height: 19rem;
@@ -112,4 +118,7 @@ export const SkillContent = styled.p`
     @media (min-width: 2299px) {
         font-size: 3.1rem;
     }
+`
+export const ListWrapper = styled.div`
+    
 `
