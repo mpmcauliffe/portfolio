@@ -2,6 +2,7 @@ import React, { Fragment, } from 'react'
 import { Partition, SectionTitle, SmallContainer, } from '../appStyles'
 import { BioImage,
     ListOutContainer,
+    ListWrapper,
     SkillContent, 
     SkillImage,
     SkillTitle, } from './styles'
@@ -64,9 +65,9 @@ const Bio = () => {
                                             fontSize: '1.5rem', 
                                             color: '#4d2f4a', 
                                             margin: '1rem 0', }}
-
-                                    >   {value}
-                                    </SkillContent>
+                                    
+                                        >   {value}
+                                    </SkillContent> 
                                 ))}
                             </div>
                         </SmallContainer> 
@@ -80,7 +81,19 @@ const Bio = () => {
 
 
 export { Bio }
+//{listOut[key].map(value => (
 
+
+
+// <ListWrapper>
+//     {listOut[key].map(value => (
+        
+//         <p key={value}>
+//             {value},&nbsp;&nbsp;
+//         </p>
+        
+//     ))}
+// </ListWrapper>
 
 /**
  <SkillTitle>Languages</SkillTitle>

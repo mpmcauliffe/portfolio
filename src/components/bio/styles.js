@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { colorTheme } from '../appStyles'
 
 
@@ -44,6 +44,19 @@ export const BioImage = styled.img`
 /*
  *  SKILLS 
  */
+const toolStyles = ({ tool }) => {
+    if (tool) {
+        return css`
+            height: 7rem;
+            width: 7rem;
+            opacity: .5;
+        `
+    }
+    return css`
+        height: 15rem;
+        width: 15rem;
+    `
+}
 export const ListOutContainer = styled.div`
     display: flex;
     align-self: center;
@@ -71,25 +84,26 @@ export const ListOutContainer = styled.div`
     }
 `
 export const SkillImage = styled.img`
-    height: ${props => props.tool ? '7rem' : '15rem'};
-    width: ${props => props.tool ? '7rem' : '15rem'};
-    opacity: ${props => props.tool ? '.5' : '1'};
+    /* height: 15rem;
+    width: 15rem; */
+    /* opacity: ${props => props.tool ? '.5' : '1'}; */
 
+    ${toolStyles}
     @media (max-width: 482px) {
         margin-top: ${props => props.tool ? '3rem' : '0'};
     }
 
     @media (min-width: 1439px) {
-        height: 19rem;
-        width: 19rem;
+        height: ${props => props.tool ? '10rem' : '19rem'};
+        width: ${props => props.tool ? '10rem' : '19rem'};
     }
     @media (min-width: 1999px) {
-        height: 24rem;
-        width: 24rem;
+        height: ${props => props.tool ? '13rem' : '24rem'};
+        width: ${props => props.tool ? '13rem' : '24rem'};
     }
     @media (min-width: 2300px) {
-        height: 29rem;
-        width: 29rem;
+        height: ${props => props.tool ? '13rem' : '29rem'};
+        width: ${props => props.tool ? '13rem' : '29rem'};
     }
 `
 export const SkillPolygon = styled.div`
@@ -120,5 +134,20 @@ export const SkillContent = styled.p`
     }
 `
 export const ListWrapper = styled.div`
-    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* align-items: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+
+    > p {
+        font-size: 1.5rem;
+        text-align: center;
+        color: ${props => props.theme.darkWine};
+    }
+
+    @media (max-width: 480px) {
+        flex-direction: row;
+    }
 `
