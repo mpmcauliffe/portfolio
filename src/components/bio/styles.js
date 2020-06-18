@@ -137,17 +137,32 @@ export const ListWrapper = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 
     > p {
         font-size: 1.5rem;
-        text-align: center;
+        margin: .5rem 1rem;
+        /* flex-basis: */
         color: ${props => props.theme.darkWine};
+
+        @media (min-width: 1439px) {
+            font-size: 1.8rem;
+            margin: .7rem 1rem;
+        }
+        @media (min-width: 1999px) {
+            font-size: 2.1rem;
+            margin: .9rem 1rem;
+    }
+        @media (min-width: 2299px) {
+            font-size: 2.4rem;
+            margin: 1.1rem 1rem;
+        }
     }
 
     @media (max-width: 480px) {
         flex-direction: row;
+        justify-content: space-evenly;
     }
 `

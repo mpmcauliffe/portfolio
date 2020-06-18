@@ -26,8 +26,7 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 2.6rem;
     }
     h4 {
-        font-size: 1.9rem;
-        font-weight: 400;
+        font-size: 2rem;
     }
     li {
         list-style: none;
@@ -43,6 +42,9 @@ export const GlobalStyle = createGlobalStyle`
         h3 {
             font-size: 3.3rem;
         }
+        h4 {
+            font-size: 2.3rem;
+        }
     }
 
     @media (min-width: 1999px) {
@@ -55,6 +57,9 @@ export const GlobalStyle = createGlobalStyle`
         h3 {
             font-size: 3.8rem;
         }
+        h4 {
+            font-size: 2.6rem;
+        }
     }
 
     @media (min-width: 2299px) {
@@ -66,6 +71,9 @@ export const GlobalStyle = createGlobalStyle`
         }
         h3 {
             font-size: 4.5rem;
+        }
+        h4 {
+            font-size: 2.9rem;
         }
     }
 `

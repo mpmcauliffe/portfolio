@@ -49,27 +49,23 @@ const Bio = () => {
                                 alt='lang tools design'
                                 src={require(`./list/${index+1}.svg`).default} />
 
-                            <SkillTitle
+                            <h4
                                 style={{ textAlign: 'center', 
-                                    fontSize: '2rem',
+                                    //fontSize: '2rem',
                                     color: '#780470', 
-                                    marginBottom: '1rem' }}
+                                    margin: '2rem 0 1rem 0' }}
 
                             >   {key}
-                            </SkillTitle>
-                            <div>
+                            </h4>
+                            <ListWrapper>
                                 {listOut[key].map(value => (
-                                    <SkillContent
-                                        key={value}
-                                        style={{ textAlign: 'center', 
-                                            fontSize: '1.5rem', 
-                                            color: '#4d2f4a', 
-                                            margin: '1rem 0', }}
                                     
-                                        >   {value}
-                                    </SkillContent> 
+                                    <p key={value}>
+                                        {value}
+                                    </p>
+                                    
                                 ))}
-                            </div>
+                            </ListWrapper>
                         </SmallContainer> 
                     ))}
                 </ListOutContainer>
@@ -81,19 +77,25 @@ const Bio = () => {
 
 
 export { Bio }
-//{listOut[key].map(value => (
 
+//,&nbsp;&nbsp;
 
-
-// <ListWrapper>
+// <div>
 //     {listOut[key].map(value => (
+//         <SkillContent
+//             key={value}
+//             style={{ textAlign: 'center', 
+//                 fontSize: '1.5rem', 
+//                 color: '#4d2f4a', 
+//                 margin: '1rem 0', }}
         
-//         <p key={value}>
-//             {value},&nbsp;&nbsp;
-//         </p>
-        
+//             >   {value}
+//         </SkillContent> 
 //     ))}
-// </ListWrapper>
+// </div>
+
+
+
 
 /**
  <SkillTitle>Languages</SkillTitle>

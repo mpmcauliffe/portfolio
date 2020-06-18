@@ -18,7 +18,7 @@ export const skillsText = [
 
 export const listOut = {
     'Languages': ['HTML', 'CSS', 'Javascript'],
-    'Tools': ['React', 'TypeScript', 'Node JS',  'Mongo DB', 'Gatsby', 'Sass', 'jQuery', 'HTML5 Canvas', 'Auth0', 'Github', 'Redux', 'GraphQL'],
+    'Tools': ['React', 'TypeScript', 'Node JS',  'Mongo DB', 'Gatsby', 'Sass', 'jQuery', 'Canvas', 'Auth0', 'Github', 'Redux', 'GraphQL'],
     'Graphics': ['Photoshop', 'Illustrator', 'InDesign', 'Adobe XD', 'Adobe Animate', 'UI Design', 'Logo Design'],
 }
 
