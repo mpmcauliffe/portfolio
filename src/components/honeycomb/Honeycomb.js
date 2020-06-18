@@ -7,6 +7,7 @@ import { DownArrow,
     HexCanvas, 
     NamePlaque,
     NavButton, 
+    SubTitle,
     Top,
     Test, } from './styles'
 
@@ -33,7 +34,7 @@ class Honeycomb extends Component {
                 {/**/} 
                 <NamePlaque>
                     <h1 style={{ color: '#FAF9F5', }}>Michael Paul McAuliffe</h1>
-                    <h3 style={{ color: '#FAF9F5', }}>Frontend & React Developer</h3>
+                    <SubTitle style={{ color: '#FAF9F5', }}>Frontend & React Developer</SubTitle>
 
                     <Link
                         activeClass='active'

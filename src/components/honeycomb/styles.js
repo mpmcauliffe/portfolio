@@ -46,14 +46,14 @@ export const NamePlaque = styled.div`
     opacity: 1;
     animation: ${tapeAnimation} 3s;
 
-     @media (max-width: 481px) {
+    /* @media (max-width: 481px) {
         /* height: 33rem;
         width: 100vw;
         margin: 0;
         top: 5%;
-        left: 0; */
+        left: 0; 
     }
-    /*@media (min-width: 1439px) {
+    @media (min-width: 1439px) {
         height: 35rem;
         width: 100rem;
     }
@@ -66,6 +66,29 @@ export const NamePlaque = styled.div`
         width: 79rem;
     } */
 `
+export const SubTitle = styled.h2`
+    font-size: 4.2rem;
+    
+    @media (max-width: 768px) {
+            font-size: 3.6rem;
+    }
+    @media (max-width: 480px) {
+        font-size: 2.8rem;
+    }
+    
+    @media (min-width: 1024px) {
+        font-size: 4.2rem;
+    }
+    @media (min-width: 1439px) {
+        font-size: 5rem;
+    }
+    @media (min-width: 1999px) {
+        font-size: 5.8rem;
+    }
+    @media (min-width: 2299px) {
+        font-size: 6.6rem;
+    }
+`
 export const NavButton = styled.div`
     display: flex;
     height: 6rem;
@@ -76,7 +99,9 @@ export const NavButton = styled.div`
     /* color: #E09F3E; */
     /* background: #1C3339; */
     color: ${props => props.theme.secondaryGray};
-    background: ${props => props.theme.primaryGray};
+    /* background: ${props => props.theme.primaryGray}; */
+    background: rgba(99, 102, 107, .3);
+    border: .1rem solid ${props => props.theme.primaryGray};
     transition: 700ms;
 
     &:hover {

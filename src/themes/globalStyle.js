@@ -17,21 +17,41 @@ export const GlobalStyle = createGlobalStyle`
         height: 100vh;
     }
     h1 {
+        font-family: 'Suez One', serif;
         font-size: 6rem;
     }
     h2 {
+        font-family: 'Lora', serif;
         font-size: 5rem;
     }
     h3 {
+        font-family: 'Hind Madurai', sans-serif;
         font-size: 2.6rem;
     }
     h4 {
         font-size: 2rem;
     }
     li {
+        font-family: 'Hind Madurai', sans-serif;
         list-style: none;
     }
+    p {
+        font-family: 'Hind Madurai', sans-serif;
+    }
 
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 5rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+    
     @media (min-width: 1439px) {
         h1 {
             font-size: 8rem;
