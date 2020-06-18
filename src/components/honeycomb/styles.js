@@ -68,7 +68,7 @@ export const NamePlaque = styled.div`
 `
 export const NavButton = styled.div`
     display: flex;
-    height: 4rem;
+    height: 6rem;
     width: 67%;
     margin: 0 auto;
     align-items: center;
