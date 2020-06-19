@@ -8,8 +8,7 @@ import { DownArrow,
     NamePlaque,
     NavButton, 
     SubTitle,
-    Top,
-    Test, } from './styles'
+    Top, } from './styles'
 
 
 class Honeycomb extends Component {
@@ -33,25 +32,24 @@ class Honeycomb extends Component {
                         background: '#05090A', }} />*/}
                 {/**/} 
                 <NamePlaque>
-                    <h1 style={{ color: '#FAF9F5', }}>Michael Paul McAuliffe</h1>
-                    <SubTitle style={{ color: '#FAF9F5', }}>Frontend & React Developer</SubTitle>
-
-                    <Link
-                        activeClass='active'
-                        to='about'
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration= {500} >
-
-                        <NavButton>
-                            <h3>check this out &emsp; </h3>
-                            <DownArrow />
-                        </NavButton>
-                    </Link>
-
-                    {/*<Test />*/} 
+                    <h1 style={{ marginBottom: 0, color: '#FAF9F5', }}>Michael P McAuliffe</h1>
+                    <SubTitle>Frontend & React Developer</SubTitle>
                     
+                    {window.innerWidth > 768 &&
+                        <Link
+                            activeClass='active'
+                            to='about'
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration= {500} >
+
+                            <NavButton>
+                                <h3>check this out &emsp; </h3>
+                                <DownArrow />
+                            </NavButton>
+                        </Link>
+                    }
                 </NamePlaque> 
                 
 

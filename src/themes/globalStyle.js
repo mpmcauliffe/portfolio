@@ -19,9 +19,14 @@ export const GlobalStyle = createGlobalStyle`
     h1 {
         font-family: 'Suez One', serif;
         font-size: 6rem;
+        color: black;
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
     }
     h2 {
         font-family: 'Lora', serif;
+        font-style: italic;
         font-size: 5rem;
     }
     h3 {
@@ -48,10 +53,10 @@ export const GlobalStyle = createGlobalStyle`
 
     @media (max-width: 480px) {
         h1 {
-            font-size: 4rem;
+            font-size: 4.5rem;
         }
     }
-    
+
     @media (min-width: 1439px) {
         h1 {
             font-size: 8rem;

@@ -30,44 +30,22 @@ export const HexCanvas = styled.div`
 `
 export const NamePlaque = styled.div`
     position: absolute;
-    /* height: 35rem; */
     height: 0;
-    /* width: 63rem; */
     z-index: 3;
-    margin-top: 5%;
-    /* top: 50%;
-    left: 50%;
-    
-    margin-left: -31.5rem; */
-    background: ${props => props.theme.secondaryGray};
-    /* border-radius: 3rem; */
+    margin-top: 1%;
     text-align: center;
-    /* opacity: .7; */
-    opacity: 1;
+
     animation: ${tapeAnimation} 3s;
 
-    /* @media (max-width: 481px) {
-        /* height: 33rem;
-        width: 100vw;
-        margin: 0;
-        top: 5%;
-        left: 0; 
+    @media (max-width: 768px) {
+        margin-top: 0;
     }
-    @media (min-width: 1439px) {
-        height: 35rem;
-        width: 100rem;
-    }
-    @media (min-width: 1999px) {
-        height: 31rem;
-        width: 76rem;
-    }
-    @media (min-width: 2299px) {
-        height: 35rem;
-        width: 79rem;
-    } */
 `
 export const SubTitle = styled.h2`
     font-size: 4.2rem;
+    color: #FAF9F5;
+    /* margin: 0 0 55vh 0; */
+    margin: 0 0 10vh 0;
     
     @media (max-width: 768px) {
             font-size: 3.6rem;
