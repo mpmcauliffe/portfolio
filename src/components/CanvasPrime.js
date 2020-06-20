@@ -16,14 +16,12 @@ const CanvasPrime = () =>
 
             <Bio />
             <Portfolio />
+            <Blog />
 
-            {/**<Blog /> */}
-
-            
-            <div 
+            {/**<div 
                 style={{ height: '30vh', 
                     width: '100%', 
-                    background: '#05090A', }} />
+                    background: '#05090A', }} /> */}
 
             {/*<GradientShield top={''} bottom={'90vh'} style={{ transform: 'rotate(180deg)', }} /> */}
 

@@ -48,16 +48,16 @@ export default canvas => {
     
 
     let loader = new ColladaLoader()
-    /* DEVELOPMENT: uncomment 52 - 61 */
-    loader.load('src/components/honeycomb/three/3Dhex-3/3Dhex.dae', (collada) => {
-        let hexon = collada.scene
+    /* DEVELOPMENT: uncomment 52 - 61 */ 
+    // loader.load('src/components/honeycomb/three/3Dhex-3/3Dhex.dae', (collada) => {
+    //     let hexon = collada.scene
 
-        hexon.children[2].children[0].material.materials[0] = new THREE.MeshLambertMaterial({ color: new THREE.Color('#010101') })
-        //hexon.children[2].children[0].material.materials[0] = new THREE.MeshPhysicalMaterial({ color: new THREE.Color('#000000') })
-        hexon.children[2].children[0].material.materials[1] = new THREE.MeshPhongMaterial({ color: new THREE.Color(0x0) })
-        //hexon.children[2].children[0].material.materials[2] = new THREE.ExtrudeGeometry({ depth: 1 })
-        scene.add(hexon)
-    })
+    //     hexon.children[2].children[0].material.materials[0] = new THREE.MeshLambertMaterial({ color: new THREE.Color('#010101') })
+    //     //hexon.children[2].children[0].material.materials[0] = new THREE.MeshPhysicalMaterial({ color: new THREE.Color('#000000') })
+    //     hexon.children[2].children[0].material.materials[1] = new THREE.MeshPhongMaterial({ color: new THREE.Color(0x0) })
+    //     //hexon.children[2].children[0].material.materials[2] = new THREE.ExtrudeGeometry({ depth: 1 })
+    //     scene.add(hexon)
+    // })
 
     /* PRODUCTION: uncomment 64 - 73 */
     loader.load('./3Dhex.dae', (collada) => {

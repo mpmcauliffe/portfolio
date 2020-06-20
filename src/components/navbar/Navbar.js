@@ -65,7 +65,8 @@ const Navbar = () => {
 
                 ><Menu>Portfolio</Menu></Link>
                 
-                {/*<Link
+                {/* */}
+                <Link
                     activeClass='active'
                     to='blog'
                     spy={true}
@@ -73,8 +74,7 @@ const Navbar = () => {
                     offset={-70}
                     duration= {500}
 
-                ><Menu>Blog</Menu></Link> */}
-                
+                ><Menu>Blog</Menu></Link>
                 
                 <Link
                     activeClass='active'
