@@ -64,7 +64,7 @@ export const UlMenu = styled.ul`
     }
 
     @media (max-width: 480px) {
-        width: 70vw;
+        width: 75vw;
         padding: 1rem;
     }
 `

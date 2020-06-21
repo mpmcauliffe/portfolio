@@ -6,7 +6,7 @@ import styled from 'styled-components'
  */
 export const BodyContainer = styled.div`
     position: absolute;
-    max-height: 1000vh;
+    /* max-height: 1000vh; */
     width: 100%;
     z-index: -10;
     background: ${props => props.theme.midnight};

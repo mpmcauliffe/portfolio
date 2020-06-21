@@ -28,7 +28,7 @@ export const IconSet = styled.div`
 
     &:hover {
         cursor: pointer;
-        color: ${props => props.hov || '#9E2A2B'};
+        color: ${props => props.hov || '#780470'}; /*'#9E2A2B*/
     }
 
     /* color: ${props => props.color || '#1C3339'}; */

@@ -23,10 +23,22 @@ const Portfolio = () => {
                             </div>
                             <div className='card-back'>
                                 <CardBacking 
-                                    color={project.color}
+                                    color={project.textColor}
                                     background={project.backgroundColor} >
                                     
                                     <Info>{project.info}</Info>
+
+                                    {project.logos &&
+                                        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+                                            {project.logos.map(logo => (
+                                                <img 
+                                                    key={logo}
+                                                    alt='logo'
+                                                    src={require(`${logo}`).default}
+                                                    style={{ width: 75 }} />
+                                            ))}
+                                        </div>
+                                    }
 
                                     <NavLinks>
                                     <Router>

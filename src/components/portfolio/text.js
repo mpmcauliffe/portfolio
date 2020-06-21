@@ -1,5 +1,23 @@
 export const projects = [
-    {   // RACEMATE
+    {   // HEXASCENT
+        name: 'Hexascent',
+        coverImg: './images/hexascent-cardFront.png',
+        alt: 'HEXASCENT',
+        info: 'HEXASCENT is my techblog. It is built with a Gatsby starter kit' +
+            ' using Netlify CMS.',
+        codeLink: 'https://github.com/mpmcauliffe/hexascent',
+        instructionsLink: '',
+        visitLink: 'https://hexascent.com/',
+        backgroundColor: '#d3d2d0',
+        textColor: '#2f2f2f',
+        deployed: true,
+        logos: true,
+        hov: '',
+        logos: [
+            './images/logos/gatsby.png',
+            './images/logos/netlify.png'
+        ]
+    }, {   // RACEMATE
         name: 'Racemate',
         coverImg: './images/racemate-cardFront.png',
         alt: 'RACEMATE',
@@ -13,6 +31,7 @@ export const projects = [
         backgroundColor: '#f7f7f7',
         textColor: '#1c395c',
         deployed: true,
+        logos: false,
         hov: '',
     }, {   // PIP-PRODUCERS
         name: 'Pip Producers',
@@ -28,6 +47,7 @@ export const projects = [
         backgroundColor: '#DAA520',
         textColor: '#393939',
         deployed: true,
+        logos: false,
         hov: '',
     }, {    // BOOKWORMZ
         name: 'Bookwormz',
@@ -43,6 +63,7 @@ export const projects = [
         backgroundColor: '#FBF8F9',
         textColor: '#275B70',
         deployed: false,
+        logos: false,
         hov: '',
     }
 ]
