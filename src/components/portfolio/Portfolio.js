@@ -35,7 +35,7 @@ const Portfolio = () => {
                                                     key={logo}
                                                     alt='logo'
                                                     src={require(`${logo}`).default}
-                                                    style={{ width: 75 }} />
+                                                    style={{ height: 75, width: 75, }} />
                                             ))}
                                         </div>
                                     }

@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     html {
         height: 100%;
         width: 100%;
-        font-size: 62.5%
+        font-size: 62.5%;
     }
     body {
         margin: 0;
