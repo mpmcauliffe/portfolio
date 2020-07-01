@@ -17,7 +17,23 @@ export const projects = [
             './images/logos/gatsby.png',
             './images/logos/netlify.png'
         ]
-    }, {   // RACEMATE
+    }, {   // BEARS
+        name: 'Bears',
+        coverImg: './images/bears-cardFront.png',
+        alt: 'BEARS',
+        info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,' +     
+            ' voluptates cupiditate accusantium nulla aspernatur molestias, doloremque,' +
+            ' consequatur pariatur vitae ex iusto! Nostrum doloremque ut sint dolores,' +
+            ' aliquam numquam tempora optio.',
+        codeLink: 'https://github.com/mpmcauliffe/Bears',
+        instructionsLink: '',
+        visitLink: 'https://racemate3d.herokuapp.com/',
+        backgroundColor: '#ede5d7',
+        textColor: '#91bd7f',
+        deployed: false,
+        logos: false,
+        hov: '',
+    },{   // RACEMATE
         name: 'Racemate',
         coverImg: './images/racemate-cardFront.png',
         alt: 'RACEMATE',
@@ -25,7 +41,7 @@ export const projects = [
             ' document their progress. It is a MERN app implemented with GraphQL and' +
             ' Apollo. State is elevated and managed through Apollo client cache.' +
             ' RACEMATE is primarily designed for mobile usage.',
-        codeLink: '',
+        codeLink: 'https://github.com/mpmcauliffe/Racemate',
         instructionsLink: '',
         visitLink: 'https://racemate3d.herokuapp.com/',
         backgroundColor: '#f7f7f7',
@@ -44,11 +60,11 @@ export const projects = [
         codeLink: 'https://github.com/mpmcauliffe/pip-producer',
         instructionsLink: 'https://mpmcauliffe.github.io/blog-instructions/',
         visitLink: 'https://fierce-springs-23091.herokuapp.com/article/5d4faa613de5e36ca4e88000',
-        backgroundColor: '#DAA520',
+        backgroundColor: '#ffffc7', //'#DAA520',
         textColor: '#393939',
         deployed: true,
         logos: false,
-        hov: '',
+        hov: '', //'#4d2f4a',
     }, {    // BOOKWORMZ
         name: 'Bookwormz',
         coverImg: './images/bookwormz-cardFront.png',

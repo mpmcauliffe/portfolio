@@ -5,8 +5,8 @@ export const themeLight = {
 
 
     // primary: '#335C67', //'#2A4C55',
-    // primaryLight: '#78C0E0',
-    // secondary: '#810424', //'#c62', // '#6e2239', // '#9c3321', // '#d4523b', //'#de2909',
+    // secondary: '#78C0E0',
+    // primary: '#810424', //'#c62', // '#6e2239', // '#9c3321', // '#d4523b', //'#de2909',
 
     // // GRAY
     // primaryGray: '#63666B',

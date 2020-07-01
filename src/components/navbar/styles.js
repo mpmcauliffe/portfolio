@@ -12,17 +12,16 @@ export const Nav = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
-    /* background: ${props => props.theme.primary}; */
-    background: ${props => props.theme.primaryGray};
+    /* background: ${props => props.theme.primaryGray}; */
 
-    /* border-top: .2rem solid ${props => props.theme.primaryLight};
-    border-bottom: .2rem solid ${props => props.theme.primaryLight}; */
+    background: linear-gradient(to right, ${p => p.theme.wine}, ${p => p.theme.midnight});
+    /* border-top: .2rem solid ${props => props.theme.secondary};*/
+    border-bottom: .2rem solid ${props => props.theme.wine}; 
 
     /* @media (max-width: 769px) {
         justify-content: flex-start;
     } */
 `
-
 export const Home = styled.div`
     height: 4rem;
     width: 3.5rem;
@@ -79,7 +78,7 @@ export const Menu = styled.li`
 
     &:hover, > .active {
         cursor: pointer;
-        color: ${props => props.theme.secondary};
+        color: ${props => props.theme.primary};
         /* border-bottom: .1rem solid #E09F3E; */
     }
 

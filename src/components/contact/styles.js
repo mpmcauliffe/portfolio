@@ -12,7 +12,7 @@ export const ContactForm = styled.form`
     background-color: ${props => props.theme.midnight};
 
     >input, >textarea {
-        height: 4rem;
+        height: 6rem;
         width: 37vw;
         margin: 2rem 0;
         padding: 1rem;
@@ -24,7 +24,7 @@ export const ContactForm = styled.form`
         transition: 700ms;
 
         &:focus {
-            border: .2rem solid ${props => props.theme.secondary};
+            border: .2rem solid ${props => props.theme.primary};
         }
     }
     >textarea {
@@ -46,8 +46,8 @@ export const ContactForm = styled.form`
     select:-webkit-autofill,
     select:-webkit-autofill:hover,
     select:-webkit-autofill:focus {
-        border: .2rem solid ${props => props.theme.primaryLight};
-        -webkit-text-fill-color: ${props => props.theme.primaryLight};
+        border: .2rem solid ${props => props.theme.secondary};
+        -webkit-text-fill-color: ${props => props.theme.secondary};
         -webkit-box-shadow: 0 0 0px 1000px #000 inset;
         /* transition: background-color 5000s ease-in-out 0s; */
     }
@@ -70,8 +70,8 @@ export const SubmitButton = styled.button`
     width: 33rem;
     margin: 6rem 0;
     background: transparent;
-    border: .3rem solid ${props => props.isComplete ? props.theme.secondary : props.theme.inputBack};
-    color: ${props => props.isComplete ? props.theme.secondary : props.theme.inputBack};
+    border: .3rem solid ${props => props.isComplete ? props.theme.primary : props.theme.inputBack};
+    color: ${props => props.isComplete ? props.theme.primary : props.theme.inputBack};
     font-size: 2.7rem;
     cursor: ${props => props.isComplete ? 'pointer' : ''};;
 `

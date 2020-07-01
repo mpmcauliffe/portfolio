@@ -5,30 +5,30 @@ import { Home, Menu, Nav, UlMenu, } from './styles'
 
 const Navbar = () => {
 
-    // const [isTraveling, setIsTraveling] = useState(false)
+    const [isTraveling, setIsTraveling] = useState(false)
 
-    // const findNavbarTop = () => {
-    //     if (window.scrollY > window.innerHeight + (window.innerHeight / 2)) {
-    //         console.log('traveling')
-    //         setIsTraveling(true)
-    //     } else {
-    //         setIsTraveling(false)
-    //     }
-    // }
+    const findNavbarTop = () => {
+        if (window.scrollY > window.innerHeight + (window.innerHeight / 2)) {
+            //console.log('traveling')
+            setIsTraveling(true)
+        } else {
+            setIsTraveling(false)
+        }
+    }
 
-    // useEffect(() => {
-    //     window.addEventListener('scroll', findNavbarTop)
+    useEffect(() => {
+        window.addEventListener('scroll', findNavbarTop)
 
-    // // eslint-disable-next-line
-    // }, [])
+    // eslint-disable-next-line
+    }, [])
 
-    // useEffect(() => {
-    //     return () => {
-    //         window.removeEventListener('scroll', findNavbarTop)
-    //     }
+    useEffect(() => {
+        return () => {
+            window.removeEventListener('scroll', findNavbarTop)
+        }
 
-    // // eslint-disable-next-line
-    // }, [])
+    // eslint-disable-next-line
+    }, [])
 
 
     return (

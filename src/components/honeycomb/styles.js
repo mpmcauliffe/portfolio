@@ -138,7 +138,13 @@ export const GradientShield = styled.div`
     /* Permalink - use to edit and share this gradient: 
     https://colorzilla.com/gradient-editor/#000000+0,000000+51,ffffff+100&0+1,0+1,0.65+51 */
 `
-
+export const Topbar = styled.div`
+    position: absolute;
+    height: .2rem;
+    width: 100vw;
+    top: 150vh;
+    background: ${props => props.theme.wine}; 
+`
 export const Test = styled.div`
     height: 100px;
     width: 100px;

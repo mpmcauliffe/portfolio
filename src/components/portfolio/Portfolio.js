@@ -43,7 +43,7 @@ const Portfolio = () => {
                                     <NavLinks>
                                     <Router>
                                         <a href={project.codeLink} style={{ textDecoration: 'none',}}>
-                                            <IconSet>
+                                            <IconSet hov={project.hov}>
                                                 <i className='fa fa-code fa-2x' aria-hidden='true' />
                                                 <LinkLabel>Code</LinkLabel>
                                             </IconSet>
@@ -51,14 +51,14 @@ const Portfolio = () => {
                                         {project.deployed && 
                                             <Fragment>
                                                 <a href={project.instructionsLink} style={{ textDecoration: 'none',}}>
-                                                    <IconSet>
+                                                    <IconSet hov={project.hov}>
                                                         <i className='fa fa-info fa-2x' aria-hidden='true' />
                                                         <LinkLabel>Instructions</LinkLabel>
                                                     </IconSet>
                                                 </a>
                                                 
                                                 <a href={project.visitLink} style={{ textDecoration: 'none',}}>
-                                                    <IconSet>
+                                                    <IconSet hov={project.hov}>
                                                         <i 
                                                             className='fa fa-arrow-up fa-2x' 
                                                             aria-hidden='true' 

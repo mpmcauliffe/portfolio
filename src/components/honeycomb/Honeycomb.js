@@ -8,7 +8,8 @@ import { DownArrow,
     NamePlaque,
     NavButton, 
     SubTitle,
-    Top, } from './styles'
+    Top,
+    Topbar, } from './styles'
 
 
 class Honeycomb extends Component {
@@ -54,8 +55,8 @@ class Honeycomb extends Component {
                 
 
                 <GradientShield />
-
                 <Fog />
+                <Topbar />
 
                 {/*<GradientShield 
                     style={{ top: '159vh',

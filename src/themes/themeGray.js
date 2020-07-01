@@ -1,8 +1,7 @@
 
 export const themeGray = {
-    primary: '#335C67', //'#2A4C55',
-    primaryLight: '#78C0E0',
-    secondary: '#ff7429', // '#ff5900', '#c62', '#810424', '#6e2239', '#9c3321', '#d4523b','#de2909',
+    primary: '#ff7429', 
+    secondary: '#008bd6', 
     wine: '#780470',
     darkWine: '#4d2f4a',
 
@@ -18,3 +17,6 @@ export const themeGray = {
 
 
 // 
+// '#ff5900', '#c62', '#810424', '#6e2239', '#9c3321', '#d4523b','#de2909',
+// '#78C0E0', // complimentary blue #008bd6  // hexAscent blue #1d81af
+//primary: '#335C67', //'#2A4C55',

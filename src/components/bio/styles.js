@@ -109,7 +109,7 @@ export const SkillImage = styled.img`
 export const SkillPolygon = styled.div`
     height: 10rem;
     width: 10rem;
-    background: ${props => props.theme.secondary};
+    background: ${props => props.theme.primary};
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
 `
 export const SkillTitle = styled.h3`
