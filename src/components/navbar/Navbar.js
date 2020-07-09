@@ -1,32 +1,28 @@
-import React, { useState, useEffect, useRef, } from 'react'
+import React, { useState, useEffect, } from 'react'
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Home, Menu, Nav, UlMenu, } from './styles'
 
 
 const Navbar = () => {
-
+    // const scrollRef = useRef(null)
     const [isTraveling, setIsTraveling] = useState(false)
 
     const findNavbarTop = () => {
-        if (window.scrollY > window.innerHeight + (window.innerHeight / 2)) {
-            //console.log('traveling')
-            setIsTraveling(true)
-        } else {
-            setIsTraveling(false)
-        }
+        window.innerWidth > 480 
+            ? window.scrollY > window.innerHeight + (window.innerHeight / 2) 
+                ? setIsTraveling(true)
+                : setIsTraveling(false)
+            : window.scrollY > window.innerHeight / 2
+                ? setIsTraveling(true)
+                : setIsTraveling(false)
     }
 
     useEffect(() => {
         window.addEventListener('scroll', findNavbarTop)
-
-    // eslint-disable-next-line
-    }, [])
-
-    useEffect(() => {
+        
         return () => {
             window.removeEventListener('scroll', findNavbarTop)
         }
-
     // eslint-disable-next-line
     }, [])
 
@@ -40,6 +36,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={-70}
                 duration= {500}
+                spy
 
             ><Home /></Link>
             
@@ -51,7 +48,7 @@ const Navbar = () => {
                     spy={true}
                     smooth={true}
                     offset={-70}
-                    duration= {500}
+                    duration={500}
 
                 ><Menu>About</Menu></Link>
                 
@@ -61,7 +58,7 @@ const Navbar = () => {
                     spy={true}
                     smooth={true}
                     offset={-70}
-                    duration= {500}
+                    duration={500}
 
                 ><Menu>Portfolio</Menu></Link>
                 
@@ -82,7 +79,7 @@ const Navbar = () => {
                     spy={true}
                     smooth={true}
                     offset={-70}
-                    duration= {500}
+                    duration={500}
 
                 ><Menu>Contact</Menu></Link>
             </UlMenu>

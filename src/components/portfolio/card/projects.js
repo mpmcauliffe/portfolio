@@ -1,7 +1,7 @@
 export const projects = [
     {   // HEXASCENT
         name: 'Hexascent',
-        coverImg: './images/hexascent-cardFront.png',
+        coverImg: 'hexascent-cardFront',
         alt: 'HEXASCENT',
         info: 'HEXASCENT is my techblog. It is built with a Gatsby starter kit' +
             ' using Netlify CMS.',
@@ -14,12 +14,12 @@ export const projects = [
         logos: true,
         hov: '',
         logos: [
-            './images/logos/gatsby.png',
-            './images/logos/netlify.png'
+            'gatsby',
+            'netlify'
         ]
     }, {   // BEARS
         name: 'Bears',
-        coverImg: './images/bears-cardFront.png',
+        coverImg: 'bears-cardFront',
         alt: 'BEARS',
         info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,' +     
             ' voluptates cupiditate accusantium nulla aspernatur molestias, doloremque,' +
@@ -35,7 +35,7 @@ export const projects = [
         hov: '',
     },{   // RACEMATE
         name: 'Racemate',
-        coverImg: './images/racemate-cardFront.png',
+        coverImg: 'racemate-cardFront',
         alt: 'RACEMATE',
         info: 'RACEMATE is a workout and routine tracking app that allows users to' +
             ' document their progress. It is a MERN app implemented with GraphQL and' +
@@ -51,7 +51,7 @@ export const projects = [
         hov: '',
     }, {   // PIP-PRODUCERS
         name: 'Pip Producers',
-        coverImg: './images/pip-cardFront.png',
+        coverImg: 'pip-cardFront',
         alt: 'pip-producers',
         info: 'Pip Producers is a blog for currency traders built on MERN' +
             ' stack architecture. Read, write, update, and delete rights' +
@@ -67,7 +67,7 @@ export const projects = [
         hov: '', //'#4d2f4a',
     }, {    // BOOKWORMZ
         name: 'Bookwormz',
-        coverImg: './images/bookwormz-cardFront.png',
+        coverImg: 'bookwormz-cardFront',
         alt: 'bookwormz',
         info: 'Bookwormz is social meetup app for book clubs. This is a' +
             ' MERN stack application that uses OAuth to harness the power' +

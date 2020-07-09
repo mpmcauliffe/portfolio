@@ -4,18 +4,22 @@ import styled from 'styled-components'
 export const Nav = styled.div`
     display : flex;
     position: ${props => (props.traveling ? 'sticky' : 'static')};
-    height: 10vh;
+    height: ${() => window.innerWidth > 480 ? '10vh' : '15vh'};
+    /* height: 10vh; */
     min-height: 7vh;
     width: 100vw;
-    top: ${props => (props.traveling ? '-2px' : '100vh')};
+    top: ${props => (
+        window.innerWidth > 480
+            ? props.traveling ? '-3px' : '100vh'
+            : props.traveling ? '85vh' : '100vh'
+    )};
     z-index: 50;
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
-    /* background: ${props => props.theme.primaryGray}; */
 
     background: linear-gradient(to right, ${p => p.theme.wine}, ${p => p.theme.midnight});
-    /* border-top: .2rem solid ${props => props.theme.secondary};*/
+    border-top: .2rem solid ${props => props.theme.wine}; 
     border-bottom: .2rem solid ${props => props.theme.wine}; 
 
     /* @media (max-width: 769px) {
@@ -79,8 +83,11 @@ export const Menu = styled.li`
     &:hover, > .active {
         cursor: pointer;
         color: ${props => props.theme.primary};
+        /* border-bottom: .1rem solid ${props => props.theme.primary}; */
         /* border-bottom: .1rem solid #E09F3E; */
     }
+
+    /* &active { color: ${props => props.theme.primary}; }  */
 
     @media (max-width: 480px) {
         font-size: 1.6rem;

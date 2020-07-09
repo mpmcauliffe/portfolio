@@ -71,7 +71,7 @@ export const NavButton = styled.div`
     display: flex;
     height: 6rem;
     width: 67%;
-    margin: 0 auto;
+    margin: ${() => window.innerWidth > 480 ? '0 auto' : '50vh auto 0 auto'};
     align-items: center;
     justify-content: center;
     /* color: #E09F3E; */

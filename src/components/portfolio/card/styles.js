@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Carousel } from 'react-responsive-carousel'
 
 
 export const CardBacking = styled.div`
@@ -35,4 +36,7 @@ export const IconSet = styled.div`
 `
 export const LinkLabel = styled.p`
     font-size: 1.7rem;
+`
+export const StyledCarousel = styled(Carousel)`
+    width: 90vw;
 `

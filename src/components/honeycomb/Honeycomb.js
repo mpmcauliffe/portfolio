@@ -8,8 +8,7 @@ import { DownArrow,
     NamePlaque,
     NavButton, 
     SubTitle,
-    Top,
-    Topbar, } from './styles'
+    Top, } from './styles'
 
 
 class Honeycomb extends Component {
@@ -31,12 +30,12 @@ class Honeycomb extends Component {
                     style={{ height: '150vh',
                         width: '100vw',
                         background: '#05090A', }} />*/}
-                {/**/} 
+                 
                 <NamePlaque>
                     <h1 style={{ marginBottom: 0, color: '#FAF9F5', }}>Michael P McAuliffe</h1>
                     <SubTitle>Frontend & React Developer</SubTitle>
+                    {/*{window.innerWidth > 768 &&}*/}
                     
-                    {window.innerWidth > 768 &&
                         <Link
                             activeClass='active'
                             to='about'
@@ -50,15 +49,15 @@ class Honeycomb extends Component {
                                 <DownArrow />
                             </NavButton>
                         </Link>
-                    }
+                    
                 </NamePlaque> 
                 
 
                 <GradientShield />
                 <Fog />
-                <Topbar />
-
-                {/*<GradientShield 
+                
+                {/*<Topbar />
+                    <GradientShield 
                     style={{ top: '159vh',
                         transform: 'rotate(180deg)', }} />*/}                
             </Top>   

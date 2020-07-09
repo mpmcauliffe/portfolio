@@ -82,7 +82,7 @@ export const SectionTitle = styled.h2`
     /* color: ${props => props.theme.primaryGray}; */
     color: ${props => props.theme.secondaryGray};
     margin-top: 0;
-    padding-top: 10rem;
+    padding-top: ${() => window.innerWidth > 480 ? '10rem': '1rem'};
     z-index: 10;
 `
 

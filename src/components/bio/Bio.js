@@ -13,7 +13,17 @@ import bonzai from './skills/2.svg'
 const Bio = () => {
     return (
         <Fragment>
-            <SectionTitle id='about'>About</SectionTitle>    
+            <SectionTitle 
+                id='about'
+                ref={el => { 
+                    if (!el) {
+                        console.log('null')
+                        return
+                    }
+                    console.log(el.getBoundingClientRect())
+                 }}>
+                About
+            </SectionTitle>    
 
             <Partition style={{ marginBottom: '10vh' }}>
                 {skillsText.map((skill, index) => (

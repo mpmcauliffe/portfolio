@@ -77,7 +77,7 @@ export const SubmitButton = styled.button`
 `
 
 export const Footer = styled.div`
-    position: absolute;
+    /* position: absolute; */
     height: 20vh;
     width: 100%;
     
