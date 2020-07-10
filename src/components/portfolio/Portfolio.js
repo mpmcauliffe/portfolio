@@ -4,8 +4,6 @@ import { Partition, SectionTitle, } from '../appStyles'
 import { CardBacking, IconSet, Info, LinkLabel, NavLinks, } from './card/styles'
 import { Card } from './card/stylesCard'
 import PortfolioCard from './card/PortfolioCard'
-import { projects, } from './card/projects'
-//import './styles.css'
 
 
 const Portfolio = () => {
