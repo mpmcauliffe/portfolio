@@ -2,8 +2,10 @@ import styled, { css } from 'styled-components'
 
 
 export const Card = styled.div`
-    width: 30rem;
-    height: 50rem;
+    /* width: 30rem; */
+    width: 32rem;
+    /* height: 50rem; */
+    height: 40.8rem;
     margin-bottom: 5rem;
     background: transparent;
     perspective: 1000px;
@@ -22,10 +24,12 @@ export const Card = styled.div`
     
     .card-front, .card-back {
         position: absolute;
-        width: 100%;
+        /* width: 100%; */
+        width: 32rem;
         /* width: ${window.innerWidth < 481 ? '100%' : '30rem'}; */
         /* max-width: 30rem; */
-        height: 100%;
+        /* height: 100%; */
+        height: 40.8rem;
         backface-visibility: hidden;
     }
     
@@ -41,23 +45,24 @@ export const Card = styled.div`
     }
 
     @media (max-width: 480px) {
-        .card-back {
-            right: 12%;
+        .card-front, .card-back {
+            right: 37.5%;
+            top: 8%;
         }
     }
-    @media (max-width: 420px) {
+    /* @media (max-width: 420px) {
         .card-back {
-            right: 8%;
+            
         }
     }
     @media (max-width: 380px) {
-        .card-back {
-            right: 4%;
+        .card-front, .card-back {
+            height: 30rem;
         }
     }
     @media (max-width: 360px) {
         .card-back {
-            right: 1%;
+            
         }
-    }
+    } */
 `

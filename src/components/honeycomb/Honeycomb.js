@@ -38,7 +38,7 @@ class Honeycomb extends Component {
                     
                         <Link
                             activeClass='active'
-                            to='about'
+                            to='portfolio'
                             spy={true}
                             smooth={true}
                             offset={-70}

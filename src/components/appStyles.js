@@ -28,15 +28,17 @@ export const Partition = styled.div`
     flex-basis: 27rem; 
     width: 90%; 
     justify-content: space-around; 
+    /* justify-content: space-between;  */
     margin: 10vh auto 25vh auto; 
     flex-wrap: wrap;
+    overflow: hidden;
 
     .bio-pic {
         justify-content: space-between;
     }
 
     @media (min-width: 1599px) {
-        width: ${props => props.portfolio ? '70%' : '90%'};
+        width: ${props => props.portfolio ? '80%' : '90%'};
     }
     @media (min-width: 1999px) {
         width: ${props => props.portfolio ? '60%' : '90%'};

@@ -6,7 +6,7 @@ export const CardBacking = styled.div`
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 100%;
+    width: 32rem;
     justify-content: space-between;
     background: ${props => props.background || '#78C0E0'};
     color: ${props => props.color || '#1C3339'};

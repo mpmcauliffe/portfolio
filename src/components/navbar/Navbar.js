@@ -44,16 +44,6 @@ const Navbar = () => {
             <UlMenu>
                 <Link
                     activeClass='active'
-                    to='about'
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-
-                ><Menu>About</Menu></Link>
-                
-                <Link
-                    activeClass='active'
                     to='portfolio'
                     spy={true}
                     smooth={true}
@@ -61,7 +51,16 @@ const Navbar = () => {
                     duration={500}
 
                 ><Menu>Portfolio</Menu></Link>
-                
+
+                <Link
+                    activeClass='active'
+                    to='about'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+
+                ><Menu>About</Menu></Link>
                 {/* */}
                 <Link
                     activeClass='active'

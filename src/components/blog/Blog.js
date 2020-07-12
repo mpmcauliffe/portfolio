@@ -9,9 +9,10 @@ const Blog = () => {
 
             <Partition>
                 <SmallContainer style={{ height: '30rem', background: '#E09F3E', }} />
+                {/**<SmallContainer style={{ height: '30rem', background: '#E09F3E', }} />
                 <SmallContainer style={{ height: '30rem', background: '#E09F3E', }} />
-                <SmallContainer style={{ height: '30rem', background: '#E09F3E', }} />
-                <SmallContainer style={{ height: '30rem', background: '#E09F3E', }} />
+                <SmallContainer style={{ height: '30rem', background: '#E09F3E', }} /> */}
+                
             </Partition>
         </Fragment>
     )

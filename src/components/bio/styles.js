@@ -49,7 +49,7 @@ const toolStyles = ({ tool }) => {
         return css`
             height: 7rem;
             width: 7rem;
-            opacity: .5;
+            opacity: .4;
         `
     }
     return css`
