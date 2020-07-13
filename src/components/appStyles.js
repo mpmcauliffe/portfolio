@@ -9,7 +9,7 @@ export const BodyContainer = styled.div`
     /* max-height: 1000vh; */
     width: 100%;
     z-index: -10;
-    background: ${props => props.theme.midnight};
+    background: ${props => props.theme.background};
 
     .up-chev {
         position: absolute;

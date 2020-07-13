@@ -18,9 +18,9 @@ export const Nav = styled.div`
     justify-content: space-between;
     padding: 0 2rem;
 
-    background: linear-gradient(to right, ${p => p.theme.wine}, ${p => p.theme.midnight});
-    border-top: .2rem solid ${props => props.theme.wine}; 
-    border-bottom: .2rem solid ${props => props.theme.wine}; 
+    background: linear-gradient(to right, ${p => p.theme.accent}, ${p => p.theme.background});
+    border-top: .2rem solid ${props => props.theme.accent}; 
+    border-bottom: .2rem solid ${props => props.theme.accent}; 
 
     /* @media (max-width: 769px) {
         justify-content: flex-start;

@@ -26,7 +26,7 @@ export const HexCanvas = styled.div`
     width: 100vw;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background: ${props => props.theme.midnight};
+    background: ${props => props.theme.background};
 `
 export const NamePlaque = styled.div`
     position: absolute;
@@ -143,7 +143,7 @@ export const Topbar = styled.div`
     height: .2rem;
     width: 100vw;
     top: 150vh;
-    background: ${props => props.theme.wine}; 
+    background: ${props => props.theme.accent}; 
 `
 export const Test = styled.div`
     height: 100px;

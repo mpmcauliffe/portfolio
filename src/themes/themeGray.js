@@ -2,8 +2,8 @@
 export const themeGray = {
     primary: '#ff7429', 
     secondary: '#008bd6', 
-    wine: '#780470',
-    darkWine: '#4d2f4a',
+    accent: '#780470',
+    darkAccent: '#4d2f4a',
 
     // GRAY
     primaryGray: '#63666B',
@@ -11,7 +11,7 @@ export const themeGray = {
     secondaryGray: '#C7D2D5',
     
     // BACKGROUND COLOR
-    midnight: '#05090A',
+    background: '#05090A',
     inputBack: '#132226',
 }
 

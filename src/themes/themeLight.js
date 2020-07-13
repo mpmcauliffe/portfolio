@@ -1,6 +1,18 @@
 
 export const themeLight = {
-    //primary: 
+    primary: '#ff7429', 
+    secondary: '#008bd6', 
+    accent: '#780470',
+    darkAccent: '#4d2f4a',
+
+    // GRAY
+    primaryGray: '#63666B',
+    warmGray: '#B1A9AE', //'#FAF9F5',
+    secondaryGray: '#C7D2D5',
+    
+    // BACKGROUND COLOR
+    background: '#05090A',
+    inputBack: '#132226',
 }
 
 
@@ -14,5 +26,5 @@ export const themeLight = {
     // secondaryGray: '#C7D2D5',
     
     // // BACKGROUND COLOR
-    // midnight: '#05090A',
+    // background: '#05090A',
     // inputBack: '#132226',

@@ -9,7 +9,7 @@ export const ContactForm = styled.form`
     padding-top: 2rem;
     /* margin-bottom: 10rem; */
     overflow-x: hidden;
-    background-color: ${props => props.theme.midnight};
+    background-color: ${props => props.theme.background};
 
     >input, >textarea {
         height: 6rem;

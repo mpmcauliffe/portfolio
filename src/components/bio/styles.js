@@ -63,7 +63,7 @@ export const ListOutContainer = styled.div`
     margin: 0 auto;
     padding: 4rem;
     background: ${props => props.theme.secondaryGray};
-    border: .1rem solid ${props => props.theme.midnight};
+    border: .1rem solid ${props => props.theme.background};
     opacity: .7;
     /* border-radius: 3rem; */
 
@@ -145,7 +145,7 @@ export const ListWrapper = styled.div`
         font-size: 1.5rem;
         margin: .5rem 1rem;
         /* flex-basis: */
-        color: ${props => props.theme.darkWine};
+        color: ${props => props.theme.darkAccent};
 
         @media (min-width: 1439px) {
             font-size: 1.8rem;
